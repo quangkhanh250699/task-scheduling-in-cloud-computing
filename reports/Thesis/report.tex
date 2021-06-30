@@ -634,9 +634,11 @@ $vm_{i}.usage$ là tài nguyên được sử dụng tại thời điểm kết 
 \[
 	vm_{i}.Eusage = vm_{i}.EshortUsage + vm_{i}.longUsage
 \]
+\newpage
 Ta tính được 2 tập hợp biểu diễn khối lượng công việc giữa các máy tính ảo: 
 \begin{itemize}
 	\item $\mathcal{L}_{batch} = \{vm_{1}.EshortUsage, ..., vm_{M}.EshortUsage\}$ là tập khối lượng tài nguyên được sử dụng bởi batch-job tasks 
+	\item $\mathcal{L}_{long} = \{vm_{1}.longUsage, ..., vm_{M}.longUsage\}$ là tập khối lượng tài nguyên được sử dụng bởi long-running tasks
 	\item $\mathcal{L} = \{vm_{1}.Eusage, ..., vm_{M}.Eusage\}$ là tập khối lượng toàn bộ tài nguyên được sử dụng
 \end{itemize}
 \begin{figure}[h!]
@@ -645,26 +647,25 @@ Ta tính được 2 tập hợp biểu diễn khối lượng công việc giữ
 	\caption{Thuật toán lập lịch cân bằng giữa long-running và batch-job}
 	\label{fig:algo3}
 \end{figure}
-Thuật toán đề xuất được mô tả trong hình ~\ref{fig:algo3}, hướng tới việc cân bằng lượng tài nguyên phân phối cho batch-job, đồng thời cân bằng tổng lượng tài nguyên giữa các máy ảo, được mô tả như sau: 
+Thuật toán đề xuất được mô tả trong hình ~\ref{fig:algo3}, hướng tới việc cân bằng lượng tài nguyên phân phối cho batch-job, đồng thời cân bằng tổng lượng tài nguyên giữa các máy ảo, được mô tả như sau: \par
 Các tasks ở trong hàng đợi được xếp theo thứ tự thời gian đến, ưu tiên các task có thời gian đến sớm sẽ được lựa chọn máy tính trước. Lần lượt duyệt qua các task trong hàng đợi, 
 \begin{enumerate}
 	\item Nếu task kiểu long-running	
 		\begin{itemize}
-			\item Tính $\Delta_{\mathcal{L}}$ là ma trận trọng số với tập $\mathcal{L}$
-			\item Tìm cặp $task \rightarrow vm$ là $argmin\Delta_{\mathcal{L}}$
+			\item Tính $\Delta_{\mathcal{L}_{long}}$ là ma trận trọng số với tập $\mathcal{L}_{long}$
+			\item Chọn ra tập $S$ gồm K cặp $task \rightarrow vm$ có trọng số nhỏ nhất trong $\Delta_{\mathcal{L}_{long}}$
 		\end{itemize}
 	\item Nếu task kiểu batch-job 
 		\begin{itemize}
 			\item Tính $\Delta_{\mathcal{L}_{batch}}$ là ma trận trọng số với tập $\mathcal{L}_{batch}$
 			\item Chọn ra tập $S$ gồm K cặp $task \rightarrow vm$ có trọng số nhỏ nhất trong $\Delta_{\mathcal{L}_{batch}}$
-			\item Tính ma trận trọng số $\Delta_{K}$ của $S$ với $\mathcal{L}$
-			\item Tìm cặp $task \rightarrow vm$ là $argmin\Delta_{K}$
 		\end{itemize}
-	\item Thêm cặp $task \rightarrow vm$ vào lời giải và cập nhật lại khối lượng tài nguyên được sử dụng $\mathcal{L}$
-	\item Nếu $task$ là batch-job thì cập nhật lại khối lượng tài nguyên được sử dụng bởi batch-job tasks $\mathcal{L}_{batch}$
+	\item Tính ma trận trọng số $\Delta_{K}$ của $S$ với $\mathcal{L}$
+	\item Tìm cặp $task \rightarrow vm$ là $argmin\Delta_{K}$
+	\item Thêm cặp $task \rightarrow vm$ vào lời giải và cập nhật lại khối lượng tài nguyên được sử dụng
 \end{enumerate}
 Điểm khác biệt của thuật toán này với thuật toán~\ref{alg:2} là ở việc ta cân bằng cho lượng tài nguyên được phân phối cho batch-job tasks.\\
-Lấy cảm ứng từ beam-search, thuật toán đề xuất tìm K lời giải tối ưu cho sự cân bằng batch-job tasks giữa các máy ảo, rồi tìm lời giải tốt nhất để cân bằng toàn bộ tài nguyên của hệ thống trong K nghiệm trên. 
+Thuật toán đề xuất tìm K lời giải vừa tối ưu cho sự cân bằng batch-job tasks, vừa cho long-running tasks giữa các máy ảo, rồi tìm lời giải tốt nhất để cân bằng toàn bộ tài nguyên của hệ thống trong K nghiệm trên. 
 \newpage 
 \chapter{Thực nghiệm và đánh giá}
 \label{Experiments}

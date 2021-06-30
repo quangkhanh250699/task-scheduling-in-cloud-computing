@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.31)  29 JUN 2021 22:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.31)  30 JUN 2021 17:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1620,15 +1620,6 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\acircumflex' on input line 215.
 
 
-Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 215.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 215.
-
-
 Package hyperref Warning: Composite letter `\textdotbelow+i'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textdotbelow' on input line 215.
@@ -2210,7 +2201,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 687.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 687.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 687.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 4688BB4D83B6126C39572407ED524A0D;284.
+(rerunfilecheck)             Checksum: F1700F7FBDCEB3E045CB30144B5E9D59;286.
  ) 
 Here is how much of TeX's memory you used:
  34215 strings out of 481239
@@ -2232,7 +2223,7 @@ urwvn/uhvr8v.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/urwvn/uhvro8v
 e/texlive/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/vntex/vnr/vnr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 vntex/vnr/vntt10.pfb>
-Output written on presentation.pdf (53 pages, 2994849 bytes).
+Output written on presentation.pdf (53 pages, 2994857 bytes).
 PDF statistics:
  594 PDF objects out of 1000 (max. 8388607)
  460 compressed objects within 5 object streams
