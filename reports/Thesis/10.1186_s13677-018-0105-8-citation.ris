@@ -1,0 +1,16 @@
+TY  - JOUR
+AU  - Gawali, Mahendra Bhatu
+AU  - Shinde, Subhash K.
+PY  - 2018
+DA  - 2018/02/08
+TI  - Task scheduling and resource allocation in cloud computing using a heuristic approach
+JO  - Journal of Cloud Computing
+SP  - 4
+VL  - 7
+IS  - 1
+AB  - Cloud computing is required by modern technology. Task scheduling and resource allocation are important aspects of cloud computing. This paper proposes a heuristic approach that combines the modified analytic hierarchy process (MAHP), bandwidth aware divisible scheduling (BATS) + BAR optimization, longest expected processing time preemption (LEPT), and divide-and-conquer methods to perform task scheduling and resource allocation. In this approach, each task is processed before its actual allocation to cloud resources using a MAHP process. The resources are allocated using the combined BATS + BAR optimization method, which considers the bandwidth and load of the cloud resources as constraints. In addition, the proposed system preempts resource intensive tasks using LEPT preemption. The divide-and-conquer approach improves the proposed system, as is proven experimentally through comparison with the existing BATS and improved differential evolution algorithm (IDEA) frameworks when turnaround time and response time are used as performance metrics.
+SN  - 2192-113X
+UR  - https://doi.org/10.1186/s13677-018-0105-8
+DO  - 10.1186/s13677-018-0105-8
+ID  - Gawali2018
+ER  - 

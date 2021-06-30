@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Giới thiệu chung}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Bài Toán Lập Lịch}{6}{0}{1}
+\beamer@subsectionintoc {1}{2}{Lập lịch trong môi trường Cloud Computing}{9}{0}{1}
+\beamer@sectionintoc {2}{Mô hình lập lịch đề xuất}{13}{0}{2}
+\beamer@subsectionintoc {2}{1}{Bayesian Network For Estimating Task's Status}{21}{0}{2}
+\beamer@sectionintoc {3}{Experiments and results}{23}{0}{3}

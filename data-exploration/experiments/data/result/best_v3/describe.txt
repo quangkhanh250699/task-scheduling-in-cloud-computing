@@ -1,0 +1,5 @@
+cloudlet_version: 3
+vm_version: 3
+interval_time: 10
+waiting_task: 30
+mean_scheduling_time: 2

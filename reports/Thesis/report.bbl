@@ -1,0 +1,1262 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{2}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=57a91b6cdbb4b6880100301a65a24421}{%
+           family={Kulkarni},
+           familyi={K\bibinitperiod},
+           given={Gurudatt},
+           giveni={G\bibinitperiod}}}%
+        {{hash=3397ab430ac54df9450d05b08e6e764b}{%
+           family={Solanke},
+           familyi={S\bibinitperiod},
+           given={Vikas},
+           giveni={V\bibinitperiod}}}%
+        {{hash=2d1fb3888c824bedba07281a25304b13}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Shyam},
+           giveni={S\bibinitperiod}}}%
+        {{hash=35b1c5fc70f06aca8646a39602ec71ef}{%
+           family={Polytechnic},
+           familyi={P\bibinitperiod},
+           given={Mitra},
+           giveni={M\bibinitperiod}}}%
+        {{hash=de4082b57210d21195c06582ed12b354}{%
+           family={Thergaon},
+           familyi={T\bibinitperiod},
+           given={Pune},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5da713eb223d5cfafcd5bb73e52078e}
+      \strng{fullhash}{726ff2f78f9c7ad9d12eb6cbae2f4369}
+      \strng{bibnamehash}{e5da713eb223d5cfafcd5bb73e52078e}
+      \strng{authorbibnamehash}{e5da713eb223d5cfafcd5bb73e52078e}
+      \strng{authornamehash}{e5da713eb223d5cfafcd5bb73e52078e}
+      \strng{authorfullhash}{726ff2f78f9c7ad9d12eb6cbae2f4369}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{05}
+      \field{title}{GRID COMPUTING OVERVIEW}
+      \field{year}{2013}
+    \endentry
+    \entry{1}{article}{}
+      \name{author}{1}{}{%
+        {{hash=37c685c8ee0ca009fc290511c8f371a2}{%
+           family={Bidgoli},
+           familyi={B\bibinitperiod},
+           given={Hossein},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{37c685c8ee0ca009fc290511c8f371a2}
+      \strng{fullhash}{37c685c8ee0ca009fc290511c8f371a2}
+      \strng{bibnamehash}{37c685c8ee0ca009fc290511c8f371a2}
+      \strng{authorbibnamehash}{37c685c8ee0ca009fc290511c8f371a2}
+      \strng{authornamehash}{37c685c8ee0ca009fc290511c8f371a2}
+      \strng{authorfullhash}{37c685c8ee0ca009fc290511c8f371a2}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of International Technology and Information Management}
+      \field{number}{2}
+      \field{title}{Successful Introduction of Cloud Computing into your Organization: A Six-Step Conceptual Model}
+      \field{volume}{20}
+      \field{year}{2011}
+    \endentry
+    \entry{3}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=a35fa1631c628def2ef04f2131566fa7}{%
+           family={Bubendorfer},
+           familyi={B\bibinitperiod},
+           given={Kris},
+           giveni={K\bibinitperiod}}}%
+        {{hash=47580034acceb9757d03422b763c7342}{%
+           family={Komisarczuk},
+           familyi={K\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{45c3b254ba2d2f74dfe34f6c897f069e}
+      \strng{fullhash}{45c3b254ba2d2f74dfe34f6c897f069e}
+      \strng{bibnamehash}{45c3b254ba2d2f74dfe34f6c897f069e}
+      \strng{authorbibnamehash}{45c3b254ba2d2f74dfe34f6c897f069e}
+      \strng{authornamehash}{45c3b254ba2d2f74dfe34f6c897f069e}
+      \strng{authorfullhash}{45c3b254ba2d2f74dfe34f6c897f069e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{A Position Paper: Towards an Utility Computing and Communications Infrastructure.}
+      \field{year}{2005}
+      \field{pages}{47\bibrangedash 53}
+      \range{pages}{7}
+    \endentry
+    \entry{4}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4d92f696c5bd5358a7502fa459a255ec}{%
+           family={Rashid},
+           familyi={R\bibinitperiod},
+           given={Aaqib},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b3602163416ebdbd9eb0931a258b6c82}{%
+           family={Chaturvedi},
+           familyi={C\bibinitperiod},
+           given={Amit},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d523e6c70a7eff6d69e194e23a0f7c3a}
+      \strng{fullhash}{d523e6c70a7eff6d69e194e23a0f7c3a}
+      \strng{bibnamehash}{d523e6c70a7eff6d69e194e23a0f7c3a}
+      \strng{authorbibnamehash}{d523e6c70a7eff6d69e194e23a0f7c3a}
+      \strng{authornamehash}{d523e6c70a7eff6d69e194e23a0f7c3a}
+      \strng{authorfullhash}{d523e6c70a7eff6d69e194e23a0f7c3a}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{INTERNATIONAL JOURNAL OF COMPUTER SCIENCES AND ENGINEERING}
+      \field{month}{04}
+      \field{title}{Virtualization and its Role in Cloud Computing Environment}
+      \field{volume}{Vol.-7}
+      \field{year}{2019}
+      \field{pages}{1131\bibrangedash 1136}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.26438/ijcse/v7i4.11311136
+      \endverb
+    \endentry
+    \entry{6}{article}{}
+      \name{author}{2}{}{%
+        {{hash=82a454ca91432f23cf00d3b17010bada}{%
+           family={Barbosa},
+           familyi={B\bibinitperiod},
+           given={Fernando\bibnamedelima Pires},
+           giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=29e737a7cfb3b0d5bf53c67f82c1cd85}{%
+           family={Charão},
+           familyi={C\bibinitperiod},
+           given={Andrea\bibnamedelima Schwertner},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{01671837fc8b2604e3ddb314f57fa4fb}
+      \strng{fullhash}{01671837fc8b2604e3ddb314f57fa4fb}
+      \strng{bibnamehash}{01671837fc8b2604e3ddb314f57fa4fb}
+      \strng{authorbibnamehash}{01671837fc8b2604e3ddb314f57fa4fb}
+      \strng{authornamehash}{01671837fc8b2604e3ddb314f57fa4fb}
+      \strng{authorfullhash}{01671837fc8b2604e3ddb314f57fa4fb}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{INTERNATIONAL JOURNAL OF COMPUTER SCIENCES AND ENGINEERING}
+      \field{title}{mpact of pay-as-you-go Cloud Platforms on Software Pricing and Development: A Review and Case Study}
+      \field{year}{2012}
+      \field{pages}{404\bibrangedash 417}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/978-3-642-31128-4_30
+      \endverb
+    \endentry
+    \entry{7}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1002861cc9a20974ee07771ecd694cba}{%
+           family={Gawali},
+           familyi={G\bibinitperiod},
+           given={Mahendra\bibnamedelima Bhatu},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{1002861cc9a20974ee07771ecd694cba}
+      \strng{fullhash}{1002861cc9a20974ee07771ecd694cba}
+      \strng{bibnamehash}{1002861cc9a20974ee07771ecd694cba}
+      \strng{authorbibnamehash}{1002861cc9a20974ee07771ecd694cba}
+      \strng{authornamehash}{1002861cc9a20974ee07771ecd694cba}
+      \strng{authorfullhash}{1002861cc9a20974ee07771ecd694cba}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Cloud Computing}
+      \field{month}{2}
+      \field{title}{Task scheduling and resource allocation in cloud computing using a heuristic approach}
+      \field{volume}{7}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1186/s13677-018-0105-8
+      \endverb
+    \endentry
+    \entry{5}{article}{}
+      \name{author}{1}{}{%
+        {{hash=43fdb815016f5505c9f7bc10bd265e03}{%
+           family={Syed\bibnamedelimb Hamid\bibnamedelimb Hussain\bibnamedelima Madni},
+           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Muhammad\bibnamedelimb Shafie\bibnamedelimb Abd\bibnamedelima Latiff},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{43fdb815016f5505c9f7bc10bd265e03}
+      \strng{fullhash}{43fdb815016f5505c9f7bc10bd265e03}
+      \strng{bibnamehash}{43fdb815016f5505c9f7bc10bd265e03}
+      \strng{authorbibnamehash}{43fdb815016f5505c9f7bc10bd265e03}
+      \strng{authornamehash}{43fdb815016f5505c9f7bc10bd265e03}
+      \strng{authorfullhash}{43fdb815016f5505c9f7bc10bd265e03}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS ONE}
+      \field{month}{03}
+      \field{title}{Performance comparison of heuristic algorithms for task scheduling in IaaS cloud computing environment}
+      \field{volume}{12}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.6084/m9.figshare.4877438
+      \endverb
+    \endentry
+    \entry{33}{article}{}
+      \name{author}{5}{}{%
+        {{hash=335a84b78fb1ee280d6d11df0162651a}{%
+           family={Madni},
+           familyi={M\bibinitperiod},
+           given={Hamid},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8a989f80fc44a9070d154d7cbf755423}{%
+           family={Shafie},
+           familyi={S\bibinitperiod},
+           given={Abd\bibnamedelima Latiff},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=ea180e1966e023a8ae86da4b539b02e5}{%
+           family={Abdullahi},
+           familyi={A\bibinitperiod},
+           given={Mohammed},
+           giveni={M\bibinitperiod}}}%
+        {{hash=27f3c0c5133215b4094dea483b7766a1}{%
+           family={Abdulhamid},
+           familyi={A\bibinitperiod},
+           given={Shafi’i},
+           giveni={S\bibinitperiod}}}%
+        {{hash=989705921bd6c6777adbcea0b8497b37}{%
+           family={Usman},
+           familyi={U\bibinitperiod},
+           given={Mohammed},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8cf2d71d0d07619f68d12ca3e958e981}
+      \strng{fullhash}{3af02593836dcf35feb9ef6df8542cad}
+      \strng{bibnamehash}{8cf2d71d0d07619f68d12ca3e958e981}
+      \strng{authorbibnamehash}{8cf2d71d0d07619f68d12ca3e958e981}
+      \strng{authornamehash}{8cf2d71d0d07619f68d12ca3e958e981}
+      \strng{authorfullhash}{3af02593836dcf35feb9ef6df8542cad}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS ONE}
+      \field{month}{05}
+      \field{title}{Performance comparison of heuristic algorithms for task scheduling in IaaS cloud computing environment}
+      \field{volume}{12}
+      \field{year}{2017}
+      \field{pages}{e0176321}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pone.0176321
+      \endverb
+    \endentry
+    \entry{34}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=429c48878ce39e601c326aad1a33932c}{%
+           family={Alboaneen},
+           familyi={A\bibinitperiod},
+           given={Dabiah},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6d7ce3b87b05743beefda09aaa30d205}{%
+           family={Tianfield},
+           familyi={T\bibinitperiod},
+           given={Hugo},
+           giveni={H\bibinitperiod}}}%
+        {{hash=28f91f3a4b62ce57b7a533e742e8aae1}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{bf601e587e58fed0cc4e01529d68d4ea}
+      \strng{fullhash}{bf601e587e58fed0cc4e01529d68d4ea}
+      \strng{bibnamehash}{bf601e587e58fed0cc4e01529d68d4ea}
+      \strng{authorbibnamehash}{bf601e587e58fed0cc4e01529d68d4ea}
+      \strng{authornamehash}{bf601e587e58fed0cc4e01529d68d4ea}
+      \strng{authorfullhash}{bf601e587e58fed0cc4e01529d68d4ea}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{03}
+      \field{title}{Glowworm Swarm Optimisation Based Task Scheduling for Cloud Computing}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1145/3018896.3036395
+      \endverb
+    \endentry
+    \entry{8}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=58a8b79f6f8528315c394d3291598361}{%
+           family={Mathew},
+           familyi={M\bibinitperiod},
+           given={Teena},
+           giveni={T\bibinitperiod}}}%
+        {{hash=bd5c3031e696c6dbcca0b036d18c3215}{%
+           family={Sekaran},
+           familyi={S\bibinitperiod},
+           given={K.\bibnamedelimi Chandra},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=89d4121470d24c3edb4bd74662767709}{%
+           family={Jose},
+           familyi={J\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1870d3c759a9bf33687a9146c10eb197}
+      \strng{fullhash}{1870d3c759a9bf33687a9146c10eb197}
+      \strng{bibnamehash}{1870d3c759a9bf33687a9146c10eb197}
+      \strng{authorbibnamehash}{1870d3c759a9bf33687a9146c10eb197}
+      \strng{authornamehash}{1870d3c759a9bf33687a9146c10eb197}
+      \strng{authorfullhash}{1870d3c759a9bf33687a9146c10eb197}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2014 International Conference on Advances in Computing, Communications and Informatics (ICACCI)}
+      \field{title}{Study and analysis of various task scheduling algorithms in the cloud computing environment}
+      \field{year}{2014}
+      \field{pages}{658\bibrangedash 664}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/ICACCI.2014.6968517
+      \endverb
+    \endentry
+    \entry{18}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=5f3c579f3b21ba42d76c7a3ee89b6ca2}{%
+           family={Wilkes},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Mountain View, CA, USA}%
+      }
+      \strng{namehash}{5f3c579f3b21ba42d76c7a3ee89b6ca2}
+      \strng{fullhash}{5f3c579f3b21ba42d76c7a3ee89b6ca2}
+      \strng{bibnamehash}{5f3c579f3b21ba42d76c7a3ee89b6ca2}
+      \strng{authorbibnamehash}{5f3c579f3b21ba42d76c7a3ee89b6ca2}
+      \strng{authornamehash}{5f3c579f3b21ba42d76c7a3ee89b6ca2}
+      \strng{authorfullhash}{5f3c579f3b21ba42d76c7a3ee89b6ca2}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Google research blog}
+      \field{month}{11}
+      \field{note}{Posted at \url{http://googleresearch.blogspot.com/2011/11/more-google-cluster-data.html}.}
+      \field{title}{More {Google} cluster data}
+      \field{year}{2011}
+    \endentry
+    \entry{17}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=9a8d7be36ca3d15f0e8b850e3324ecaf}{%
+           family={Verma},
+           familyi={V\bibinitperiod},
+           given={Abhishek},
+           giveni={A\bibinitperiod}}}%
+        {{hash=98d452a8dc2ab8d2114a21657d752109}{%
+           family={Pedrosa},
+           familyi={P\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e9d0923fa52c22e89d569e370d6d1c65}{%
+           family={Korupolu},
+           familyi={K\bibinitperiod},
+           given={Madhukar\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=3b7c6d08ef992f50cc6cb714826cab85}{%
+           family={Oppenheimer},
+           familyi={O\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3463bff76f0a89a554c51188cd2eb4f1}{%
+           family={Tune},
+           familyi={T\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=5f3c579f3b21ba42d76c7a3ee89b6ca2}{%
+           family={Wilkes},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Bordeaux, France}%
+      }
+      \strng{namehash}{8b4cb2c4c16460683fc1d01ee3b20b34}
+      \strng{fullhash}{a76f37114a834e27f2f37f61721f87fe}
+      \strng{bibnamehash}{8b4cb2c4c16460683fc1d01ee3b20b34}
+      \strng{authorbibnamehash}{8b4cb2c4c16460683fc1d01ee3b20b34}
+      \strng{authornamehash}{8b4cb2c4c16460683fc1d01ee3b20b34}
+      \strng{authorfullhash}{a76f37114a834e27f2f37f61721f87fe}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the European Conference on Computer Systems (EuroSys)}
+      \field{title}{Large-scale cluster management at {Google} with {Borg}}
+      \field{year}{2015}
+    \endentry
+    \entry{30}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://www.cloudbus.org/cloudsim/}}
+      \field{title}{CloudSim}
+    \endentry
+    \entry{9}{article}{}
+      \name{author}{4}{}{%
+        {{hash=1116dad13010bf5e990362cfc3df0e8c}{%
+           family={Christodoulopoulos},
+           familyi={C\bibinitperiod},
+           given={Konstantinos\bibnamedelima (Kostas)},
+           giveni={K\bibinitperiod\bibinitdelim (\bibinitperiod}}}%
+        {{hash=39ab81b3197896ab64b56982fca87071}{%
+           family={Sourlas},
+           familyi={S\bibinitperiod},
+           given={Vasilis},
+           giveni={V\bibinitperiod}}}%
+        {{hash=2d17ddd6ac06d8cac5ca0ed93adc0358}{%
+           family={Mpakolas},
+           familyi={M\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=ebe8539322ba5ddc1b8a6733e12d7ed3}{%
+           family={Varvarigos},
+           familyi={V\bibinitperiod},
+           given={Manos},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8d9a2d4deb9513bd9c5859e903a0657d}
+      \strng{fullhash}{ab72c2bfbee571666d6bc72fe4877bb9}
+      \strng{bibnamehash}{8d9a2d4deb9513bd9c5859e903a0657d}
+      \strng{authorbibnamehash}{8d9a2d4deb9513bd9c5859e903a0657d}
+      \strng{authornamehash}{8d9a2d4deb9513bd9c5859e903a0657d}
+      \strng{authorfullhash}{ab72c2bfbee571666d6bc72fe4877bb9}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer Communications}
+      \field{month}{05}
+      \field{title}{A comparison of centralized and distributed meta-scheduling architectures for computation and communication tasks in Grid networks}
+      \field{volume}{32}
+      \field{year}{2009}
+      \field{pages}{1172\bibrangedash 1184}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.comcom.2009.03.004
+      \endverb
+    \endentry
+    \entry{12}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=7c8bf360dc79c5c447d6c6c731c99d19}{%
+           family={Paul},
+           familyi={P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2a8919118d375f88dbf90451552ad6a8}{%
+           family={Samanta},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9a4a0ad08ca28ab8d3f7c735c779c655}{%
+           family={Sanyal},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f5e5ed4b8aa123de4fd33ccae8748851}
+      \strng{fullhash}{f5e5ed4b8aa123de4fd33ccae8748851}
+      \strng{bibnamehash}{f5e5ed4b8aa123de4fd33ccae8748851}
+      \strng{authorbibnamehash}{f5e5ed4b8aa123de4fd33ccae8748851}
+      \strng{authornamehash}{f5e5ed4b8aa123de4fd33ccae8748851}
+      \strng{authorfullhash}{f5e5ed4b8aa123de4fd33ccae8748851}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dynamic job Scheduling in Cloud Computing based on horizontal load balancing}
+      \field{year}{2011}
+    \endentry
+    \entry{10}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=5508a673c5bad60904fbc1e57392740a}{%
+           family={Izakian},
+           familyi={I\bibinitperiod},
+           given={Hesam},
+           giveni={H\bibinitperiod}}}%
+        {{hash=504ef9be34aef151081b41093b347caa}{%
+           family={Abraham},
+           familyi={A\bibinitperiod},
+           given={Ajith},
+           giveni={A\bibinitperiod}}}%
+        {{hash=30bf9aa0d01fe95931c4f064c5355b43}{%
+           family={Snasel},
+           familyi={S\bibinitperiod},
+           given={Vaclav},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ab7f990ea9bee5211e5a40150cec2a5}
+      \strng{fullhash}{4ab7f990ea9bee5211e5a40150cec2a5}
+      \strng{bibnamehash}{4ab7f990ea9bee5211e5a40150cec2a5}
+      \strng{authorbibnamehash}{4ab7f990ea9bee5211e5a40150cec2a5}
+      \strng{authornamehash}{4ab7f990ea9bee5211e5a40150cec2a5}
+      \strng{authorfullhash}{4ab7f990ea9bee5211e5a40150cec2a5}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{04}
+      \field{title}{Comparison of Heuristics for Scheduling Independent Tasks on Heterogeneous Distributed Environments}
+      \field{year}{2009}
+      \field{pages}{8\bibrangedash 12}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/CSO.2009.487
+      \endverb
+    \endentry
+    \entry{13}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=0e6728cb4319fa25db52a2475a6fb090}{%
+           family={Anousha},
+           familyi={A\bibinitperiod},
+           given={Soheil},
+           giveni={S\bibinitperiod}}}%
+        {{hash=644db3095e248d05bf4a6da5cd243b2a}{%
+           family={Ahmadi},
+           familyi={A\bibinitperiod},
+           given={Mahmood},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{08adbc05e2bafd7b188e97dc6e19e68d}
+      \strng{fullhash}{08adbc05e2bafd7b188e97dc6e19e68d}
+      \strng{bibnamehash}{08adbc05e2bafd7b188e97dc6e19e68d}
+      \strng{authorbibnamehash}{08adbc05e2bafd7b188e97dc6e19e68d}
+      \strng{authornamehash}{08adbc05e2bafd7b188e97dc6e19e68d}
+      \strng{authorfullhash}{08adbc05e2bafd7b188e97dc6e19e68d}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-642-38026-6}
+      \field{month}{05}
+      \field{title}{An Improved Min-Min Task Scheduling Algorithm in Grid Computing}
+      \field{year}{2013}
+      \field{pages}{103\bibrangedash 113}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/978-3-642-38027-3_11
+      \endverb
+    \endentry
+    \entry{14}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=4fa86ae9456272778baa53f568342bce}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Yingchi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c6649d02b24225ca4c9012cee6c790de}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b9247ae2e9fdad151ff1c5646b491940}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xiaofang},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9e8c3e329c329ca103192f4f491c19c}
+      \strng{fullhash}{d9e8c3e329c329ca103192f4f491c19c}
+      \strng{bibnamehash}{d9e8c3e329c329ca103192f4f491c19c}
+      \strng{authorbibnamehash}{d9e8c3e329c329ca103192f4f491c19c}
+      \strng{authornamehash}{d9e8c3e329c329ca103192f4f491c19c}
+      \strng{authorfullhash}{d9e8c3e329c329ca103192f4f491c19c}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-81-322-1758-9}
+      \field{journaltitle}{Advances in Intelligent Systems and Computing}
+      \field{month}{01}
+      \field{title}{Max–Min Task Scheduling Algorithm for Load Balance in Cloud Computing}
+      \field{volume}{255}
+      \field{year}{2014}
+      \field{pages}{457\bibrangedash 465}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1007/978-81-322-1759-6_53
+      \endverb
+    \endentry
+    \entry{15}{article}{}
+      \name{author}{2}{}{%
+        {{hash=46e192ec7c57d2a8d177407227f5ff93}{%
+           family={Kaur},
+           familyi={K\bibinitperiod},
+           given={Damanbeer},
+           giveni={D\bibinitperiod}}}%
+        {{hash=940d094e7ffc32bb8dcfe79a58fa418f}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Tejinder},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{7233c658aad26e7f260298facd2dfc73}
+      \strng{fullhash}{7233c658aad26e7f260298facd2dfc73}
+      \strng{bibnamehash}{7233c658aad26e7f260298facd2dfc73}
+      \strng{authorbibnamehash}{7233c658aad26e7f260298facd2dfc73}
+      \strng{authornamehash}{7233c658aad26e7f260298facd2dfc73}
+      \strng{authorfullhash}{7233c658aad26e7f260298facd2dfc73}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Computer Applications}
+      \field{month}{05}
+      \field{title}{Scheduling Algorithms in Cloud Computing}
+      \field{volume}{178}
+      \field{year}{2019}
+      \field{pages}{16\bibrangedash 21}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.5120/ijca2019918801
+      \endverb
+    \endentry
+    \entry{16}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=981bbaa8ebd3e91d5d7d1520847b6384}{%
+           family={Maheswaran},
+           familyi={M\bibinitperiod},
+           given={Muthucumaru},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b29a663dbc1f67a9e5075b2dca4b0a54}{%
+           family={Ali},
+           familyi={A\bibinitperiod},
+           given={Shoukat},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bf2c4ed505d299d41f9dcb6d802a84c9}{%
+           family={Siegal},
+           familyi={S\bibinitperiod},
+           given={H.J.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=73613baf03fcdd2b4dbe02f78713b69a}{%
+           family={Hensgen},
+           familyi={H\bibinitperiod},
+           given={Debra},
+           giveni={D\bibinitperiod}}}%
+        {{hash=293a9be8d8b58534ca2437093c747e33}{%
+           family={Freund},
+           familyi={F\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{cb2501011e752bf452a27dbb68ad43fb}
+      \strng{fullhash}{81eabdec22e4b9906b6c5778f8321d80}
+      \strng{bibnamehash}{cb2501011e752bf452a27dbb68ad43fb}
+      \strng{authorbibnamehash}{cb2501011e752bf452a27dbb68ad43fb}
+      \strng{authornamehash}{cb2501011e752bf452a27dbb68ad43fb}
+      \strng{authorfullhash}{81eabdec22e4b9906b6c5778f8321d80}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0-7695-0107-9}
+      \field{journaltitle}{Proceedings of the 8th IEEE Heterogeneous Computing Workshop}
+      \field{month}{02}
+      \field{title}{Dynamic Matching and Scheduling of a Class of Independent Tasks onto Heterogeneous Computing Systems}
+      \field{year}{1999}
+      \field{pages}{30\bibrangedash 44}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/HCW.1999.765094
+      \endverb
+    \endentry
+    \entry{21}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5a5c5433b2e07e1664adcde11516b9d9}{%
+           family={Mitzenmacher},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5a5c5433b2e07e1664adcde11516b9d9}
+      \strng{fullhash}{5a5c5433b2e07e1664adcde11516b9d9}
+      \strng{bibnamehash}{5a5c5433b2e07e1664adcde11516b9d9}
+      \strng{authorbibnamehash}{5a5c5433b2e07e1664adcde11516b9d9}
+      \strng{authornamehash}{5a5c5433b2e07e1664adcde11516b9d9}
+      \strng{authorfullhash}{5a5c5433b2e07e1664adcde11516b9d9}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Parallel and Distributed Systems}
+      \field{number}{10}
+      \field{title}{The power of two choices in randomized load balancing}
+      \field{volume}{12}
+      \field{year}{2001}
+      \field{pages}{1094\bibrangedash 1104}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/71.963420
+      \endverb
+    \endentry
+    \entry{20}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=7270e2f2d76ca65712af49b0257af29d}{%
+           family={Ousterhout},
+           familyi={O\bibinitperiod},
+           given={Kay},
+           giveni={K\bibinitperiod}}}%
+        {{hash=54749885e1243b01239492a603b6a69e}{%
+           family={Wendell},
+           familyi={W\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=00dc518b94dfa6349c86e70661a1a5ef}{%
+           family={Zaharia},
+           familyi={Z\bibinitperiod},
+           given={Matei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=51d9ef26181e2e8a9dc546b401e0bb26}{%
+           family={Stoica},
+           familyi={S\bibinitperiod},
+           given={Ion},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{73ecaf7243aec952e028ea44f1c4fe2a}
+      \strng{fullhash}{d06e48b969273d81ba6cb4f951d40167}
+      \strng{bibnamehash}{73ecaf7243aec952e028ea44f1c4fe2a}
+      \strng{authorbibnamehash}{73ecaf7243aec952e028ea44f1c4fe2a}
+      \strng{authornamehash}{73ecaf7243aec952e028ea44f1c4fe2a}
+      \strng{authorfullhash}{d06e48b969273d81ba6cb4f951d40167}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781450323888}
+      \field{title}{Sparrow: Distributed, Low Latency Scheduling}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1145/2517349.2522716
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/2517349.2522716
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/2517349.2522716
+      \endverb
+    \endentry
+    \entry{22}{article}{}
+      \name{author}{1}{}{%
+        {{hash=965ac95f29750cb2c16c12f2d452fb2f}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Gahyun},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{965ac95f29750cb2c16c12f2d452fb2f}
+      \strng{fullhash}{965ac95f29750cb2c16c12f2d452fb2f}
+      \strng{bibnamehash}{965ac95f29750cb2c16c12f2d452fb2f}
+      \strng{authorbibnamehash}{965ac95f29750cb2c16c12f2d452fb2f}
+      \strng{authornamehash}{965ac95f29750cb2c16c12f2d452fb2f}
+      \strng{authorfullhash}{965ac95f29750cb2c16c12f2d452fb2f}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{A Generalization of Multiple Choice Balls-into-Bins: Tight Bounds}
+      \field{volume}{abs/1201.3310}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1201.3310
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1201.3310
+      \endverb
+    \endentry
+    \entry{19}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{hash=8ba51193c1d242961e20f566577b31a2}{%
+           family={Tirmazi},
+           familyi={T\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=77446bb2592ddafdd206d28272305ba9}{%
+           family={Barker},
+           familyi={B\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1f47b49081ae07726c5988cf1ead914b}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=77fb2fd5d409f352c07c176fb4404630}{%
+           family={Haque},
+           familyi={H\bibinitperiod},
+           given={Md\bibnamedelima Ehtesam},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=387eca050ddf876e6883fc6b6a1495e8}{%
+           family={Qin},
+           familyi={Q\bibinitperiod},
+           given={Zhijing\bibnamedelima Gene},
+           giveni={Z\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=ae4b8fa8c5628beeb183f814b5bbfcae}{%
+           family={Hand},
+           familyi={H\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a83a7faf335240fc7128d5b36cdef519}{%
+           family={Harchol-Balter},
+           familyi={H\bibinithyphendelim B\bibinitperiod},
+           given={Mor},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5f3c579f3b21ba42d76c7a3ee89b6ca2}{%
+           family={Wilkes},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Heraklion, Crete}%
+      }
+      \strng{namehash}{48b096812f33a39ce13b2659d9912d5b}
+      \strng{fullhash}{bfc3e211a9d8ce98f8c3854880c3e513}
+      \strng{bibnamehash}{48b096812f33a39ce13b2659d9912d5b}
+      \strng{authorbibnamehash}{48b096812f33a39ce13b2659d9912d5b}
+      \strng{authornamehash}{48b096812f33a39ce13b2659d9912d5b}
+      \strng{authorfullhash}{bfc3e211a9d8ce98f8c3854880c3e513}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{EuroSys'20}
+      \field{title}{Borg: the Next Generation}
+      \field{year}{2020}
+    \endentry
+    \entry{23}{article}{}
+      \name{author}{5}{}{%
+        {{hash=33f5ffe890160fb90d6c4934d2096c67}{%
+           family={Amir},
+           familyi={A\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=cccbb4f4d1d946397b2c88e2f48e377b}{%
+           family={Awerbuch},
+           familyi={A\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4a91b1b615e5d75686d3aa8e84843b1f}{%
+           family={Barak},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0976f075c3a3f6783f6940caa1844bea}{%
+           family={Borgstrom},
+           familyi={B\bibinitperiod},
+           given={R.\bibnamedelimi S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=8063b788674ad05f55644c1258fcb583}{%
+           family={Keren},
+           familyi={K\bibinitperiod},
+           given={Arie},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e841e0a2bda95430eb4f524f8eb94359}
+      \strng{fullhash}{e3aaff270cbefa7c44d743c4045e1cde}
+      \strng{bibnamehash}{e841e0a2bda95430eb4f524f8eb94359}
+      \strng{authorbibnamehash}{e841e0a2bda95430eb4f524f8eb94359}
+      \strng{authornamehash}{e841e0a2bda95430eb4f524f8eb94359}
+      \strng{authorfullhash}{e3aaff270cbefa7c44d743c4045e1cde}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Trans. Parallel Distributed Syst.}
+      \field{title}{An Opportunity Cost Approach for Job Assignment in a Scalable Computing Cluster}
+      \field{volume}{11}
+      \field{year}{2000}
+      \field{pages}{760\bibrangedash 768}
+      \range{pages}{9}
+    \endentry
+    \entry{24}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=1b18e290d760210c9cf47caabca5f32e}{%
+           family={Minet},
+           familyi={M\bibinitperiod},
+           given={Pascale},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bd30f6e7f8ec58d5e7e7837eadf2e52d}{%
+           family={Renault},
+           familyi={R\bibinitperiod},
+           given={Éric},
+           giveni={É\bibinitperiod}}}%
+        {{hash=8d23f74b7ea292197aae12fdea63785b}{%
+           family={Khoufi},
+           familyi={K\bibinitperiod},
+           given={Ines},
+           giveni={I\bibinitperiod}}}%
+        {{hash=8384b770405eb3b7746e37442d53f81e}{%
+           family={Boumerdassi},
+           familyi={B\bibinitperiod},
+           given={Selma},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{77eba4e29b6c8399a40c0e7f28d4d176}
+      \strng{fullhash}{2c00ae6e02172c1f2a6025b4815f92fc}
+      \strng{bibnamehash}{77eba4e29b6c8399a40c0e7f28d4d176}
+      \strng{authorbibnamehash}{77eba4e29b6c8399a40c0e7f28d4d176}
+      \strng{authornamehash}{77eba4e29b6c8399a40c0e7f28d4d176}
+      \strng{authorfullhash}{2c00ae6e02172c1f2a6025b4815f92fc}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 14th International Wireless Communications Mobile Computing Conference (IWCMC)}
+      \field{title}{Analyzing Traces from a Google Data Center}
+      \field{year}{2018}
+      \field{pages}{1167\bibrangedash 1172}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/IWCMC.2018.8450304
+      \endverb
+    \endentry
+    \entry{25}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9fe03a92fa21d69094a3e7de9c413207}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={PeiYun},
+           giveni={P\bibinitperiod}}}%
+        {{hash=00ce451b9cefca23cd5a9ca5846fdf87}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={MengChu},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d2df49bdd5dc6178dc814bf218d5b268}
+      \strng{fullhash}{d2df49bdd5dc6178dc814bf218d5b268}
+      \strng{bibnamehash}{d2df49bdd5dc6178dc814bf218d5b268}
+      \strng{authorbibnamehash}{d2df49bdd5dc6178dc814bf218d5b268}
+      \strng{authornamehash}{d2df49bdd5dc6178dc814bf218d5b268}
+      \strng{authorfullhash}{d2df49bdd5dc6178dc814bf218d5b268}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Automation Science and Engineering}
+      \field{number}{2}
+      \field{title}{Dynamic Cloud Task Scheduling Based on a Two-Stage Strategy}
+      \field{volume}{15}
+      \field{year}{2018}
+      \field{pages}{772\bibrangedash 783}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TASE.2017.2693688
+      \endverb
+    \endentry
+    \entry{26}{article}{}
+      \name{author}{6}{}{%
+        {{hash=ae021641a8f85fd2607152ab99ed115b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=ce1fec313c8d6712ff2d822b0c1dfc52}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Junwei},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2027d87ecbb78155b509c7838f415304}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c31858d8e9516215ffefcb1b24ae2bfd}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Samee\bibnamedelima U.},
+           giveni={S\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=2c80db23ae044b179c707e92964e75d0}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Keqin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=d913b7de1daa87c8658ba2dcad408248}{%
+           family={Zomaya},
+           familyi={Z\bibinitperiod},
+           given={Albert\bibnamedelima Y.},
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{b34ec7ee85af98aed1e55ed4599fbd0e}
+      \strng{fullhash}{16ab2b0e33aa2b36d2bc66a02dfef72d}
+      \strng{bibnamehash}{b34ec7ee85af98aed1e55ed4599fbd0e}
+      \strng{authorbibnamehash}{b34ec7ee85af98aed1e55ed4599fbd0e}
+      \strng{authornamehash}{b34ec7ee85af98aed1e55ed4599fbd0e}
+      \strng{authorfullhash}{16ab2b0e33aa2b36d2bc66a02dfef72d}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Emerging Topics in Computing}
+      \field{number}{3}
+      \field{title}{Evolutionary Scheduling of Dynamic Multitasking Workloads for Big-Data Analytics in Elastic Cloud}
+      \field{volume}{2}
+      \field{year}{2014}
+      \field{pages}{338\bibrangedash 351}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TETC.2014.2348196
+      \endverb
+    \endentry
+    \entry{27}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ffdf7cd4c362ecc72a00927f9ef398c5}{%
+           family={Sucar},
+           familyi={S\bibinitperiod},
+           given={Luis\bibnamedelima Enrique},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ffdf7cd4c362ecc72a00927f9ef398c5}
+      \strng{fullhash}{ffdf7cd4c362ecc72a00927f9ef398c5}
+      \strng{bibnamehash}{ffdf7cd4c362ecc72a00927f9ef398c5}
+      \strng{authorbibnamehash}{ffdf7cd4c362ecc72a00927f9ef398c5}
+      \strng{authornamehash}{ffdf7cd4c362ecc72a00927f9ef398c5}
+      \strng{authorfullhash}{ffdf7cd4c362ecc72a00927f9ef398c5}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Probabilistic Graphical Models Principles and Applications}
+      \field{year}{2015}
+    \endentry
+    \entry{28}{book}{}
+      \name{author}{2}{}{%
+        {{hash=9c785bcf6b8a0b99e44695299a6aecb2}{%
+           family={Koller},
+           familyi={K\bibinitperiod},
+           given={Daphne},
+           giveni={D\bibinitperiod}}}%
+        {{hash=987ee418ae32e261a8a5385e14cda479}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Nir},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The MIT Press}%
+      }
+      \strng{namehash}{644f618617c37fd03b6bc0248cd308d5}
+      \strng{fullhash}{644f618617c37fd03b6bc0248cd308d5}
+      \strng{bibnamehash}{644f618617c37fd03b6bc0248cd308d5}
+      \strng{authorbibnamehash}{644f618617c37fd03b6bc0248cd308d5}
+      \strng{authornamehash}{644f618617c37fd03b6bc0248cd308d5}
+      \strng{authorfullhash}{644f618617c37fd03b6bc0248cd308d5}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0262013193}
+      \field{title}{Probabilistic Graphical Models: Principles and Techniques - Adaptive Computation and Machine Learning}
+      \field{year}{2009}
+    \endentry
+    \entry{29}{article}{}
+      \name{author}{4}{}{%
+        {{hash=330c2f5eed15decf0d44a70e0d71ae9e}{%
+           family={Ajroud},
+           familyi={A\bibinitperiod},
+           given={Amen},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c0f79805e2d1a5e510d66930b618347f}{%
+           family={Omri},
+           familyi={O\bibinitperiod},
+           given={Mohamed\bibnamedelima Nazih},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=169d4b89715711167cd2c6c5e29e8ceb}{%
+           family={Youssef},
+           familyi={Y\bibinitperiod},
+           given={Habib},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8e9e71ae4496824be3bb60e7b81b886f}{%
+           family={Benferhat},
+           familyi={B\bibinitperiod},
+           given={Salem},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3126f9d49cb0d8fdffa55e66f2e0b6b}
+      \strng{fullhash}{deac0e3b717583dece5a98b1c7917a13}
+      \strng{bibnamehash}{a3126f9d49cb0d8fdffa55e66f2e0b6b}
+      \strng{authorbibnamehash}{a3126f9d49cb0d8fdffa55e66f2e0b6b}
+      \strng{authornamehash}{a3126f9d49cb0d8fdffa55e66f2e0b6b}
+      \strng{authorfullhash}{deac0e3b717583dece5a98b1c7917a13}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Loopy Belief Propagation in Bayesian Networks : origin and possibilistic perspectives}
+      \field{volume}{abs/1206.0976}
+      \field{year}{2012}
+      \verb{eprint}
+      \verb 1206.0976
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1206.0976
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1206.0976
+      \endverb
+    \endentry
+    \entry{31}{article}{}
+      \name{author}{6}{}{%
+        {{hash=9f458bc50755c57d85072b485e16d9be}{%
+           family={Xia},
+           familyi={X\bibinitperiod},
+           given={Yunni},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=00ce451b9cefca23cd5a9ca5846fdf87}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={MengChu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c3680f10268b9cd1db6029379f2d644a}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=8e8d4cb7b49ef09e463a91d35617d6e6}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Qingsheng},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=508f0a4e80af71a1970f575437811489}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jia},
+           giveni={J\bibinitperiod}}}%
+        {{hash=dc6b5e453107942fba466f6dd9f9bf05}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{258d6d98c671d1e423af7295b9cb4923}
+      \strng{fullhash}{1bce1d6f4373c3c07ab2aaa5e14f49a8}
+      \strng{bibnamehash}{258d6d98c671d1e423af7295b9cb4923}
+      \strng{authorbibnamehash}{258d6d98c671d1e423af7295b9cb4923}
+      \strng{authornamehash}{258d6d98c671d1e423af7295b9cb4923}
+      \strng{authorfullhash}{1bce1d6f4373c3c07ab2aaa5e14f49a8}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Automation Science and Engineering}
+      \field{number}{1}
+      \field{title}{Stochastic Modeling and Quality Evaluation of Infrastructure-as-a-Service Clouds}
+      \field{volume}{12}
+      \field{year}{2015}
+      \field{pages}{162\bibrangedash 170}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/TASE.2013.2276477
+      \endverb
+    \endentry
+    \entry{32}{article}{}
+      \name{author}{5}{}{%
+        {{hash=101864955a39bd807830fbac5dee909d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Ji},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4ae0ffab0863850411e553b7e6a52ab9}{%
+           family={Bao},
+           familyi={B\bibinitperiod},
+           given={Weidong},
+           giveni={W\bibinitperiod}}}%
+        {{hash=a9b628c460310919486b77fdff4005f9}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Xiaomin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=f3bc61bef024b778766decf5b834db82}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Laurence},
+           giveni={L\bibinitperiod}}}%
+        {{hash=baa983e0769e57b7f9a497fc98e9a245}{%
+           family={Xiang},
+           familyi={X\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{3496a3e48fa5d776e38b0bf9a63103a1}
+      \strng{fullhash}{f0406b11b622dcfa6a8a44baaf2a9243}
+      \strng{bibnamehash}{3496a3e48fa5d776e38b0bf9a63103a1}
+      \strng{authorbibnamehash}{3496a3e48fa5d776e38b0bf9a63103a1}
+      \strng{authornamehash}{3496a3e48fa5d776e38b0bf9a63103a1}
+      \strng{authorfullhash}{f0406b11b622dcfa6a8a44baaf2a9243}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Computers}
+      \field{month}{03}
+      \field{title}{FESTAL: Fault-Tolerant Elastic Scheduling Algorithm for Real-Time Tasks in Virtualized Clouds}
+      \field{volume}{64}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.1109/TC.2014.2366751
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

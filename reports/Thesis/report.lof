@@ -1,0 +1,26 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Lập lịch trong môi trường cloud computing\relax }}{9}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Các thành phần lập lịch\relax }}{10}{figure.caption.6}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Các phương pháp lập lịch\relax }}{14}{figure.caption.7}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Mô hình đồ thị xác suất\relax }}{19}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Mô hình đồ thị Bayesian\relax }}{21}{figure.caption.9}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Luồng di chuyển của task\relax }}{24}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Trạng thái máy tính tại thời điểm lập lịch và thực thi\relax }}{24}{figure.caption.11}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Mất cân bằng giữa các task do sự kết thúc của batch-job tasks\relax }}{25}{figure.caption.12}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Mô hình lập lịch\relax }}{26}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Mạng Bayesian thể hiện quan hệ giữa các tasks trong cùng một job\relax }}{27}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Mạng Bayesian cho trường hợp có 2 tasks\relax }}{28}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Trạng thái máy tính tại thời điểm lập lịch và thực thi\relax }}{29}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Thuật toán lập lịch cân bằng giữa long-running và batch-job\relax }}{32}{figure.caption.17}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Mô hình mô phỏng\relax }}{34}{figure.caption.18}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Phân phối của độ trễ trong quá trình mô phỏng\relax }}{39}{figure.caption.23}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Thời gian trễ ảnh hưởng tới độ sai lệch\relax }}{39}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Ảnh hưởng của sự trễ với thời gian thực thi\relax }}{40}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Thông số tại thời điểm kết thúc lập lịch\relax }}{42}{figure.caption.26}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Mức độ mất cân bằng trong quá trình hoạt động\relax }}{42}{figure.caption.27}%
+\addvspace {10\p@ }

@@ -1,0 +1,687 @@
+\documentclass[11pt,xcolor={dvipsnames}, aspectratio=169]{beamer}
+\usetheme[
+%%% option passed to the outer theme
+%    progressstyle=fixedCircCnt,   % fixedCircCnt, movingCircCnt (moving is deault)
+  ]{Feather}
+  
+% If you want to change the colors of the various elements in the theme, edit and uncomment the following lines
+
+% Change the bar colors:
+\setbeamercolor{Feather}{fg=NavyBlue!20,bg=NavyBlue}
+%
+%% Change the color of the structural elements:
+\setbeamercolor{structure}{fg=NavyBlue}
+%
+%% Change the frame title text color:
+\setbeamercolor{frametitle}{fg=black!5}
+%
+%% Change the normal text colors:
+\setbeamercolor{normal text}{fg=black!75,bg=gray!5}
+%
+%%% Change the block title colors
+\setbeamercolor{block title}{use=Feather,bg=Feather.fg, fg=black!90} 
+
+
+% Change the logo in the upper right circle:
+%\renewcommand{\logofile}{example-grid-100x100pt} 
+%% This is an image that comes with the LaTeX installation
+% Adjust scale of the logo w.r.t. the circle; default is 0.875
+% \renewcommand{\logoscale}{0.55}
+
+% Change the background image on the title and final page.
+% It stretches to fill the entire frame!
+% \renewcommand{\backgroundfile}{example-grid-100x100pt}
+
+%-------------------------------------------------------
+% INCLUDE PACKAGES
+%-------------------------------------------------------
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pgfplots}
+\usepackage{filecontents}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[dvipsnames]{xcolor}
+
+% If you want to change the colors of the various elements in the theme, edit and uncomment the following lines
+
+% Change the bar colors:
+%\setbeamercolor{Feather}{fg=red!20,bg=red}
+
+% Change the color of the structural elements:
+%\setbeamercolor{structure}{fg=red}
+
+% Change the frame title text color:
+%\setbeamercolor{frametitle}{fg=blue}
+
+% Change the normal text color background:
+%\setbeamercolor{normal text}{fg=black,bg=gray!10}
+
+%-------------------------------------------------------
+% INCLUDE PACKAGES
+%-------------------------------------------------------
+
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{helvet}
+% \usepackage{helvet}
+
+%% Load different font packages to use different fonts
+%% e.g. using Linux Libertine, Linux Biolinum and Inconsolata
+% \usepackage{libertine}
+% \usepackage{zi4}
+
+%% e.g. using Carlito and Caladea
+
+
+%% e.g. using Venturis ADF Serif and Sans
+% \usepackage{venturis}
+
+%-------------------------------------------------------
+% DEFFINING AND REDEFINING COMMANDS
+%-------------------------------------------------------
+
+% colored hyperlinks
+\newcommand{\chref}[2]{
+  \href{#1}{{\usebeamercolor[bg]{Feather}#2}}
+}
+
+%-------------------------------------------------------
+% INFORMATION IN THE TITLE PAGE
+%-------------------------------------------------------
+
+\title[] % [] is optional - is placed on the bottom of the sidebar on every slide
+{ % is placed on the title page
+      \textbf{Sử dụng mạng Bayesian ước lượng tài nguyên khả dụng cho bài toán lập lịch trong môi trường \\
+      Cloud Computing}
+}
+
+\subtitle[Task Scheduling Algorithm]
+{
+      \textbf{}
+}
+
+\author[Quang Khanh]
+{      Quang Khanh \\
+      {\ttfamily khanh.tq170083@gmail.com}
+}
+
+\institute[]
+{%
+      Đại học Bách khoa Hà Nội\\
+	  Viện Công nghệ Thông tin và Truyền thông
+}
+
+\date{\today}
+
+%-------------------------------------------------------
+% THE BODY OF THE PRESENTATION
+%-------------------------------------------------------
+
+\AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Nội dung}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+\begin{document}
+
+%-------------------------------------------------------
+% THE TITLEPAGE
+%-------------------------------------------------------
+
+{\1% % this is the name of the PDF file for the background
+\begin{frame}[plain,noframenumbering] % the plain option removes the header from the title page, noframenumbering removes the numbering of this frame only
+  \titlepage % call the title page information from above
+\end{frame}}
+
+
+\begin{frame}{Nội dung}{}
+\tableofcontents
+\end{frame}
+
+\section{Giới thiệu chung}
+
+\begin{frame}
+{Sự xuất hiện của Cloud Computing}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{images/cloud_computing_applications.png}
+\end{figure}
+\end{frame}
+
+%\begin{frame}
+%{Cloud Computing}
+%% Giới thiệu về Cloud Computing là gì
+%\begin{block}
+%{Data Center}
+%Là hệ thống các máy chủ trong công ty, tổ chức nhằm phục vụ mục đích lưu trữ và truy cập dữ liệu, cung cấp tiện ích tới người dùng (nhân viên, ...) thông qua mạng nội bộ. Việc xây dựng, bảo trì hệ thống được thực hiện bởi nội bộ công ty.
+%\end{block}
+%\pause
+%\begin{block}
+%{Cloud}
+%Là phiên bản 'từ xa' của Data center, được đặt ở nơi nào đó không phải là ở công ty, tổ chức, người dùng truy cập thông qua internet. Việc quản lý, xây dựng được thực hiện bởi nhà cung cấp dịch vụ cloud.
+%\end{block} 
+%\end{frame}
+
+
+\begin{frame}
+{Vấn đề lập lịch trong hệ thống Cloud}
+% Tại sao cần lập lịch trong hệ thống Cloud
+\begin{minipage}[t]{0.48\linewidth}
+	\begin{block}
+	{Luồng hoạt động}
+	\begin{enumerate}
+		\item <2-> Người dùng gửi các tasks đến hệ thống
+		\item <3->Các tasks được đưa đến hàng đợi cho đến khi được lập lịch
+		\item <4->Bộ lập lịch tìm các máy tính phù hợp cho các tasks
+		\item <5->Chuyển các tasks đến các máy tính và thực thi
+	\end{enumerate}
+	\end{block}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\linewidth}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.4]{images/basic_flow.png}
+		\caption{Người dùng gửi tasks đến hệ thống}
+	\end{figure}
+\end{minipage}
+\end{frame}
+
+%\begin{frame}
+%{Bài toán lập lịch thời gian thực}
+%% Bài toán lập lịch trong thực tế 
+%
+%\begin{block}
+%{Điểm khác với bài toán lập lịch thông thường}
+%\pause
+%\begin{itemize}
+%	\item <2-> $tasks = \{task_{1}, task_{2}, ..., task_{N}\}$ là tập vector thông tin của tasks với \\ $N \to \infty$
+%	\item <3-> $times = \{t_{1}, t_{2}, ..., t_{N}\}$
+%	\item <4-> $vms = \{vm_{1}, vm_{2}, ..., vm_{M}\}$ là trạng thái của hệ thống, thay đổi liên tục theo thời gian 
+%	\item <5-> Không xác định trước số lượng câu lệnh của một tasks
+%\end{itemize}
+%\end{block}
+%\end{frame}
+
+
+\section{Các vấn đề của thuật toán lập lịch thời gian thực}
+
+\begin{frame}
+{Sai số do độ trễ trong quá trình lập lịch}
+% Vấn đề và nguồn gốc của sự sai số 
+	\begin{minipage}[t]{0.4\linewidth}
+		\begin{block}{Trạng thái tài nguyên}
+		\begin{itemize}
+			\item <2-> Tại thời điểm $t_{1}$
+			\begin{itemize}
+				\item available\_cpu = $c_{1}$
+				\item available\_memory = $m_{1}$
+			\end{itemize}
+			\item <3-> Tại thời điểm $t_{2}$
+			\begin{itemize}
+				\item available\_cpu = $c_{2}$
+				\item available\_memory = $m_{2}$
+			\end{itemize}
+		\end{itemize}
+		\end{block}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.59\linewidth}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.5]{images/state_change.png}
+			\caption{Trạng thái máy tính}
+		\end{figure}
+	\end{minipage}
+	\pause
+	\pause
+	\pause
+	\begin{center}
+		\begin{block}
+		{\centering Vấn đề}
+				\centering $c_{1} \neq c_{2}$ hoặc $m_{1} \neq m_{2}$
+		\end{block}
+	\end{center}
+\end{frame}
+
+%\begin{frame}
+%{Ảnh hưởng của thời gian lập lịch}
+%\begin{figure}
+%\centering
+%\begin{subfigure}{.5\textwidth}
+%  \centering
+%  \includegraphics[width=.85\linewidth]{images/scheduling_time_vs_delta.png}
+%  \caption{Thời gian trễ với độ lệch số liệu}
+%\end{subfigure}%
+%\begin{subfigure}{.5\textwidth}
+%  \centering
+%  \includegraphics[width=.9\linewidth]{images/delay_impact.png}
+%  \caption{Sự trễ làm tăng thời gian thực thi}
+%\end{subfigure}
+%\caption{Thông số tại thời điểm kết thúc lập lịch}
+%\label{fig:usage_est}
+%\end{figure}
+%\end{frame}
+
+
+\begin{frame}
+{Mất cân bằng khối lượng công việc khi hoạt động}
+% Hiện tượng mất cân bằng khối lượng các máy trong quá trình chạy, nguyên nhân 
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{images/unload_balancing.png}
+	\caption{Mất cân bằng giữa các task do sự kết thúc của batch-job tasks}
+	\label{fig:unload_balancing}
+\end{figure}
+\end{frame}
+
+
+%\section{Mục tiêu đồ án}
+%\begin{frame}
+%{Mục tiêu của đồ án nghiên cứu}
+%% Đưa ra mục tiêu nghiên cứu bao gồm xác định các nguyên nhân của các vấn đề trên và đưa ra giải pháp cải thiện
+%\pause 
+%\begin{block}
+%{Dự đoán tài nguyên tại thời điểm thực thi}
+%\pause
+%Dùng mạng Bayesian dự đoán trạng thái tasks trong hệ thống tại thời điểm kết thúc lập lịch
+%\end{block}
+%\pause
+%\begin{block}
+%{Giảm sự mất cân bằng khối lượng tasks trong thời gian hoạt động}
+%\pause 
+%Cân bằng khối lượng tasks dài và ngắn giữa các máy tính ảo 
+%\end{block}
+%\end{frame}
+
+\section{Giải pháp} 
+
+\begin{frame}
+{Ước lượng trạng thái các tasks}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{images/predicting_status1.png}
+	\caption{Trạng thái tài nguyên tại thời điểm lập lịch và thực thi}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+{Ước lượng trạng thái các tasks}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{images/predicting_status2.png}
+	\caption{Trạng thái tài nguyên tại thời điểm lập lịch và thực thi}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+{Ước lượng trạng thái các tasks}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{images/predicting_status3.png}
+	\caption{Trạng thái tài nguyên tại thời điểm lập lịch và thực thi}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+{Ước lượng tài nguyên khả dụng}
+\pause
+\begin{block}
+{Tập các tasks đang chạy trên máy tính ảo tại thời điểm lập lịch}
+\[
+	\mathcal{T} = \{task_{1}, task_{2}, ..., task_{K}\}
+\]
+\end{block}
+\pause
+\begin{block}
+{Ước lượng kì vọng tài nguyên khả dụng tại thời điểm thực thi}
+\[
+	available\_resources = resources\_capacity - \sum_{i = 1}^{K}{resources\_usage_{i} \times p_{i}}
+\]
+\begin{itemize}
+	\item $p_{i}$ là xác suất $task_{i}$ còn hoạt động tại thời điểm thực thi
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+{Mạng Bayesian ước lượng xác suất task còn hoạt động}
+\pause
+\begin{figure}
+		\centering
+		\includegraphics[scale=0.8]{images/job_decomposition.png}
+		\caption{Task trong cùng job}
+	\end{figure}
+\end{frame}
+
+%\begin{frame}
+%{Mạng Bayesian ước lượng xác suất task còn hoạt động}
+%\begin{minipage}[t]{0.58\linewidth}
+%	\begin{block}
+%	{Xét trường hợp job gồm 2 tasks}
+%	\begin{itemize}
+%		\item Gọi $J, T_{1}, T_{2}$ là biến ngẫu nhiên thể hiện trạng thái của $job, task_{1}, task_{2}$
+%%		\item r là hoạt động, f là kết thúc 
+%	\end{itemize}
+%	\end{block}
+%	\begin{block}
+%	{Điều kiện độc lập}
+%		$T_{1}$ và $T_{2}$ độc lập nếu biết $J$
+%		\begin{align*}
+%			P(J, T_{1},& T_{2}) = P(J) \times P(T_{1}, T_{2} \mid J) \\
+%				&= \color{red}{P(J) \times P(T_{1} \mid J) \times P(T_{2} \mid J)}
+%		\end{align*}
+%	\end{block}
+%%	\begin{align*}
+%%		P(T_{1} = f \mid &T_{2} = f) = \\
+%%			& \sum_{s \in \{r, f\}}{P(T_{1} = f, J = s \mid T_{2} = f)}	
+%%	\end{align*}
+%	
+%\end{minipage}
+%\hfill
+%\begin{minipage}[t]{0.4\linewidth}
+%	\vspace{1.5cm}
+%	\begin{figure}
+%		\centering
+%		\includegraphics[scale=0.5]{images/job_decomposition2.png}
+%		\caption{Task trong cùng job}
+%	\end{figure}
+%\end{minipage}
+%\end{frame}
+
+%\begin{frame}
+%{Mạng Bayesian ước lượng trạng thái tasks}
+%% Đề xuất mô hình Bayes dự đoán trạng thái của các tasks 
+%\begin{block}
+%{Biểu diễn mạng}
+%\begin{figure}[h!]
+%	\centering 
+%	\includegraphics[scale=0.6]{images/job_network.png}
+%	\caption{Mạng Bayesian thể hiện quan hệ giữa các tasks trong cùng một job}
+%	\label{fig:job_network}
+%\end{figure}
+%\end{block}
+%\end{frame}
+
+\begin{frame}
+{Ví dụ minh họa mạng Bayesian}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.4]{images/bayesian_network_ex1.png}
+		\caption{Ví dụ về mạng Bayesian cho 3 tasks}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+{Ví dụ minh họa mạng Bayesian}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.4]{images/bayesian_network_ex2.png}
+		\caption{Ví dụ về mạng Bayesian cho 3 tasks}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+{Ví dụ minh họa mạng Bayesian}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.4]{images/bayesian_network_ex3.png}
+		\caption{Ví dụ về mạng Bayesian cho 3 tasks}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+{Cân bằng khối lượng công việc giữa các máy ảo}
+% Đề xuất thuật toán cân bằng khối lượng công việc giữa các máy ảo 
+\pause
+\begin{block}
+{Khối lượng công việc của M máy ảo}
+\[
+	\mathcal{L} = \{l_{1}, l_{2}, ..., l_{M}\}
+\]
+\end{block}
+\pause
+\begin{block}
+{Độ mất cân bằng}
+\[
+	\sigma(\mathcal{L}) = \frac{1}{M} \times \sum_{i = 1}^{M}(l_{i} - \overline{l})^{2}
+\]
+với 
+\[
+	\overline{l} = \frac{1}{M}\sum_{i = 1}^{M}l_{i}
+\]
+\end{block}
+\end{frame}
+
+\begin{frame}
+{Lựa chọn máy tính ảo cho tasks}
+	\begin{figure}
+		\vspace{1cm}
+		\includegraphics[scale=0.4]{images/balancing_tasks1.png}
+%		\caption{Lập lịch cho tasks}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+{Lựa chọn máy tính ảo cho tasks}
+	\begin{figure}
+		\vspace{1cm}
+		\includegraphics[scale=0.4]{images/balancing_tasks2.png}
+%		\caption{Lập lịch cho tasks}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+{Lựa chọn máy tính ảo cho tasks}
+	\begin{figure}
+		\vspace{1cm}
+		\includegraphics[scale=0.4]{images/balancing_tasks3.png}
+%		\caption{Lập lịch cho tasks}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+{Lựa chọn máy tính ảo cho tasks}
+	\begin{figure}
+		\vspace{1cm}
+		\includegraphics[scale=0.4]{images/balancing_tasks4.png}
+%		\caption{Lập lịch cho tasks}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+{Lựa chọn máy tính ảo cho tasks}
+	\begin{figure}
+		\vspace{1cm}
+		\includegraphics[scale=0.4]{images/balancing_tasks5.png}
+%		\caption{Lập lịch cho tasks}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+{Lựa chọn máy tính ảo cho tasks}
+	\begin{figure}
+		\vspace{1cm}
+		\includegraphics[scale=0.4]{images/balancing_tasks6.png}
+%		\caption{Lập lịch cho tasks}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+{Lựa chọn máy tính ảo cho tasks}
+	\begin{figure}
+		\vspace{1cm}
+		\includegraphics[scale=0.4]{images/balancing_tasks7.png}
+%		\caption{Lập lịch cho tasks}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+{Lựa chọn máy tính ảo cho tasks}
+	\begin{figure}
+		\vspace{1cm}
+		\includegraphics[scale=0.4]{images/balancing_tasks8.png}
+%		\caption{Lập lịch cho tasks}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+{Lựa chọn máy tính ảo cho tasks}
+	\begin{figure}
+		\vspace{1cm}
+		\includegraphics[scale=0.4]{images/balancing_tasks9.png}
+%		\caption{Lập lịch cho tasks}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+{Lựa chọn máy tính ảo cho tasks}
+	\begin{figure}
+		\vspace{1cm}
+		\includegraphics[scale=0.4]{images/balancing_tasks10.png}
+%		\caption{Lập lịch cho tasks}
+	\end{figure}
+\end{frame}
+
+%\begin{frame}
+%{Mô hình đề xuất}
+%\begin{block}
+%{\centering Mô hình hoạt động}
+%	\begin{figure}
+%		\centering
+%		\includegraphics[scale=0.4]{images/system_flows.png}	
+%	\end{figure}
+%\end{block}
+%\end{frame}
+
+\section{Đánh giá hiệu năng} 
+
+%\begin{frame}
+%{Hệ thống mô phỏng}
+%% Mô tả hệ thống mô phỏng
+%\begin{figure}[h!]
+%	\centering 
+%	\includegraphics[scale=0.5]{images/simulation_system.png}
+%	\caption{Mô hình mô phỏng}
+%	\label{fig:simuation_system}
+%\end{figure}
+%\end{frame}
+
+\begin{frame}
+{Kịch bản lập lịch}
+% Mô tả dữ liệu mô phỏng 
+\begin{itemize}
+	\item M = 10 máy tính ảo 
+	\item N = 15000 tasks
+	\item K = 3
+	\item $T \sim \mathcal{P}(\lambda = 15)$
+	\item $delay\_time \sim \mathcal{N}(\mu = 5, \sigma = 0.5)$
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+{Số liệu so sánh về thời gian}
+\begin{table}[h!]
+	\centering
+	\caption{Kết quả về thời gian chạy của các tasks}
+	\begin{tabular}{|p{1.5cm}| p{1.5cm} | p{1.5cm} | p{1.6cm}|}
+		\hline
+		\multicolumn{4}{|c|}{Running statistics over 1000s} \\
+		\hline
+		stats & FCFS & Worstfit & Resources \\
+			&	&	& balancing \\
+		\hline
+		\hline
+		count&\color{red}{13214}&\color{red}{13925}&\color{red}{14235} \\
+		\hline
+		mean&\color{blue}10.62&\color{blue}{6.34}&\color{blue}{5.42}\\
+		\hline
+		std&54.24&33.37&27.31 \\
+		\hline
+		min&0.31&0.12&0.21 \\
+%		\hline
+%		25\%&3.15&2.09&2.08 \\
+		\hline
+		50\%&5.78&3.52&3.41 \\
+%		\hline
+%		75\%&8.13&5.61&5.50 \\
+		\hline
+		max&829.92&616.35&640.39 \\
+		\hline
+	\end{tabular}
+	\label{table:finished_tasks}
+\end{table}
+\end{frame}
+
+\begin{frame}
+{So sánh độ chính xác của mạng Bayesian}
+\begin{figure}
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.85\linewidth]{images/cpu_usage_estimation_1.png}
+  \caption{Tài nguyên khả dụng tại thời điểm thực thi}
+  \label{fig:usage_est_a}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{images/cpu_usage_estimation_2.png}
+  \caption{Sai số với số lượng tasks đang chạy}
+   \label{fig:usage_est_b}
+\end{subfigure}
+\caption{Thông số tại thời điểm kết thúc lập lịch}
+\label{fig:usage_est}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+{So sánh mức độ mất cân bằng giữa các máy tính}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.6]{images/unbalanced_weights.png}
+	\caption{Mức độ mất cân bằng trong quá trình hoạt động}
+\end{figure}
+\end{frame}
+
+\section{Kết luận}
+
+\begin{frame}
+{Kết luận và định hướng}
+% Trình bày kết quả đạt được 
+\pause
+\begin{block}
+{Kết luận}
+	\begin{itemize}
+		\item <2-> Thuật toán đã cải thiện được sai số giữa thời điểm lập lịch và thực thi
+		\item <3->Có thể cân bằng được khối lượng công việc trong quá trình chạy 
+	\end{itemize}
+\end{block}
+
+\pause
+\pause
+
+\begin{block}
+{Định hướng phát triển}
+\begin{itemize}
+	\item <5-> Phát triển mô hình đồ thị Bayesian phù hợp với học liên tục 
+	\item <6-> Mở rộng bài sang bài toán resource scaling
+\end{itemize}
+\end{block}
+\end{frame}
+
+{\1
+\begin{frame}[plain,noframenumbering]
+  \finalpage{Thank You For Listening!}
+\end{frame}}
+
+\end{document}

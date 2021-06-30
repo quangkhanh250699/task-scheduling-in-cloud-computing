@@ -1,0 +1,5 @@
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is 'presentation.blg'
+[150] biber:322> INFO - === T4 Thg 6  2, 2021, 17:48:40
+[344] Utils.pm:309> ERROR - Cannot find 'presentation.bcf'!
+[344] Biber.pm:132> INFO - ERRORS: 1
