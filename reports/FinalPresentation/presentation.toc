@@ -1,5 +1,5 @@
 \beamer@sectionintoc {1}{Giới thiệu chung}{3}{0}{1}
-\beamer@sectionintoc {2}{Các vấn đề của bài toán lập lịch thời gian thực}{10}{0}{2}
-\beamer@sectionintoc {3}{Giải pháp}{16}{0}{3}
-\beamer@sectionintoc {4}{Đánh giá hiệu năng}{41}{0}{4}
-\beamer@sectionintoc {5}{Kết luận}{46}{0}{5}
+\beamer@sectionintoc {2}{Các vấn đề của bài toán lập lịch thời gian thực}{8}{0}{2}
+\beamer@sectionintoc {3}{Giải pháp}{13}{0}{3}
+\beamer@sectionintoc {4}{Đánh giá hiệu năng}{33}{0}{4}
+\beamer@sectionintoc {5}{Kết luận}{38}{0}{5}

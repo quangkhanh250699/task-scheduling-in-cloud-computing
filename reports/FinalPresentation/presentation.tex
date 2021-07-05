@@ -69,6 +69,10 @@
 \usepackage{geometry}
 \usepackage{float}
 \usepackage{helvet}
+
+
+\captionsetup{labelformat=empty,labelsep=none}
+
 % \usepackage{helvet}
 
 %% Load different font packages to use different fonts
@@ -107,14 +111,17 @@
 }
 
 \author[Quang Khanh]
-{      Quang Khanh \\
-      {\ttfamily khanh.tq170083@gmail.com}
+{     Sinh viên thực hiện: Trương Quang Khánh \\
+      { Giảng viên hướng dẫn: TS. Nguyễn Bình Minh}
 }
 
 \institute[]
 {%
-      Đại học Bách khoa Hà Nội\\
-	  Viện Công nghệ Thông tin và Truyền thông
+\vspace{0.5cm}
+	{\centering \includegraphics[scale=0.3]{images/hustlogo.png}}\\
+	{\centering Viện Công nghệ Thông tin và Truyền thông}
+%      Đại học Bách khoa Hà Nội\\
+%	  Viện Công nghệ Thông tin và Truyền thông
 }
 
 \date{\today}
@@ -123,13 +130,7 @@
 % THE BODY OF THE PRESENTATION
 %-------------------------------------------------------
 
-\AtBeginSection[]
-{
-    \begin{frame}
-        \frametitle{Nội dung}
-        \tableofcontents[currentsection]
-    \end{frame}
-}
+
 \begin{document}
 
 %-------------------------------------------------------
@@ -178,10 +179,10 @@
 	\begin{block}
 	{Luồng hoạt động}
 	\begin{enumerate}
-		\item <2-> Người dùng gửi các tasks đến hệ thống
-		\item <3->Các tasks được đưa đến hàng đợi cho đến khi được lập lịch
-		\item <4->Bộ lập lịch tìm các máy tính phù hợp cho các tasks
-		\item <5->Chuyển các tasks đến các máy tính và thực thi
+		\item Người dùng gửi các tasks đến hệ thống
+		\item Các tasks được đưa đến hàng đợi cho đến khi được lập lịch
+		\item Bộ lập lịch tìm các máy tính phù hợp cho các tasks
+		\item Chuyển các tasks đến các máy tính và thực thi
 	\end{enumerate}
 	\end{block}
 \end{minipage}
@@ -195,22 +196,65 @@
 \end{minipage}
 \end{frame}
 
-%\begin{frame}
-%{Bài toán lập lịch thời gian thực}
-%% Bài toán lập lịch trong thực tế 
-%
-%\begin{block}
-%{Điểm khác với bài toán lập lịch thông thường}
-%\pause
-%\begin{itemize}
-%	\item <2-> $tasks = \{task_{1}, task_{2}, ..., task_{N}\}$ là tập vector thông tin của tasks với \\ $N \to \infty$
-%	\item <3-> $times = \{t_{1}, t_{2}, ..., t_{N}\}$
-%	\item <4-> $vms = \{vm_{1}, vm_{2}, ..., vm_{M}\}$ là trạng thái của hệ thống, thay đổi liên tục theo thời gian 
-%	\item <5-> Không xác định trước số lượng câu lệnh của một tasks
-%\end{itemize}
-%\end{block}
-%\end{frame}
+\begin{frame}
+{Vấn đề lập lịch trong hệ thống Cloud}
+% Tại sao cần lập lịch trong hệ thống Cloud
+\begin{minipage}[t]{0.48\linewidth}
+	\vspace{1cm}
+	\begin{block}
+	{Tại sao cần lập lịch?}
+	\begin{enumerate}
+		\item Tiết kiệm chi phí nhờ sử dụng hiệu quả tài nguyên 
+		\item Tăng chất lượng dịch vụ cung cấp cho người dùng
+	\end{enumerate}
+	\end{block}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\linewidth}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.4]{images/basic_flow.png}
+		\caption{Người dùng gửi tasks đến hệ thống}
+	\end{figure}
+\end{minipage}
+\end{frame}
 
+\begin{frame}
+{Các dạng lập lịch}
+\begin{block}
+{Hai kiểu lời giải phổ biển cho bài toán}
+\begin{itemize}
+	\item Có N tasks, M máy ảo, lời giải là cách ghép cặp task -> máy ảo cho N tasks. 
+	\item Có K nhóm của tasks, M máy ảo, lời giải là cách phân chia 
+		\[
+			\Theta = \{\theta_{1}, ..., \theta_{K}\}
+		\]
+		với \begin{itemize}
+			\item $\theta_{i}$ là số lượng máy tính ảo được phân cho nhóm i 
+			\item $\sum_{i = 1}^{K}\theta_{i} = M$
+		\end{itemize}
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+{Các thuật toán phổ biển}
+\begin{block}
+{Heuristic}
+Là những thuật toán đưa ra lời giải chấp nhận được, thỏa mãn mục tiêu và ràng buộc của bài toán 
+\begin{itemize}
+	\item Nhóm các thuật toán dựa trên quần thể như GA, PSO, ...
+	\item Nhóm các thuật toán tìm kiếm lời giải tối ưu như Tabu Search, Beam Search
+\end{itemize} 
+\end{block}
+\begin{block}
+{Đặc điểm chung}
+\begin{itemize}
+	\item Tìm nghiệm tối ưu hàm $\mathcal{F}$ nào đó trong miền không gian có ràng buộc
+	\item Hàm $\mathcal{F}$ sẽ được tính dựa trên các thông tin về hệ thống tại thời điểm lập lịch
+\end{itemize}
+\end{block}
+\end{frame}
 
 \section{Các vấn đề của bài toán lập lịch thời gian thực}
 
@@ -225,7 +269,7 @@
 				\item available\_cpu = $c_{1}$
 				\item available\_memory = $m_{1}$
 			\end{itemize}
-			\item <3-> Tại thời điểm $t_{2}$
+			\item <2-> Tại thời điểm $t_{2}$
 			\begin{itemize}
 				\item available\_cpu = $c_{2}$
 				\item available\_memory = $m_{2}$
@@ -243,10 +287,9 @@
 	\end{minipage}
 	\pause
 	\pause
-	\pause
 	\begin{center}
 		\begin{block}
-		{\centering Vấn đề}
+		{\centering Vấn đề 1}
 				\centering $c_{1} \neq c_{2}$ hoặc $m_{1} \neq m_{2}$
 		\end{block}
 	\end{center}
@@ -274,13 +317,28 @@
 
 \begin{frame}
 {Mất cân bằng khối lượng công việc khi hoạt động}
-% Hiện tượng mất cân bằng khối lượng các máy trong quá trình chạy, nguyên nhân 
+
+\begin{minipage}[t]{0.34\linewidth}
+	\begin{itemize}
+		\item long-run: các tasks dạng service luôn luôn chạy 
+		\item batch-job: các tasks thuộc dạng batch, thời gian thực thi từ vài trăm mili giây tới vài giây 
+	\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.65\linewidth}
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.5]{images/unload_balancing.png}
-	\caption{Mất cân bằng giữa các task do sự kết thúc của batch-job tasks}
+	\includegraphics[scale=0.35]{images/unload_balancing.png}
+	\caption{Mất cân bằng khối lượng tasks}
 	\label{fig:unload_balancing}
 \end{figure}
+\end{minipage}
+\pause
+	\begin{block}
+	{\centering Vấn đề 2}
+		\centering Các batch-job tasks kết thúc trong quá trình chạy phá vỡ trạng thái cân bằng khối lượng công việc giữa các máy ảo 
+	\end{block}
+% Hiện tượng mất cân bằng khối lượng các máy trong quá trình chạy, nguyên nhân 
 \end{frame}
 
 
@@ -306,6 +364,7 @@
 
 \begin{frame}
 {Ước lượng trạng thái các tasks}
+\pause
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.5]{images/predicting_status1.png}
@@ -313,14 +372,14 @@
 \end{figure}
 \end{frame}
 
-\begin{frame}
-{Ước lượng trạng thái các tasks}
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.5]{images/predicting_status2.png}
-	\caption{Trạng thái tài nguyên tại thời điểm lập lịch và thực thi}
-\end{figure}
-\end{frame}
+%\begin{frame}
+%{Ước lượng trạng thái các tasks}
+%\begin{figure}
+%	\centering
+%	\includegraphics[scale=0.5]{images/predicting_status2.png}
+%	\caption{Trạng thái tài nguyên tại thời điểm lập lịch và thực thi}
+%\end{figure}
+%\end{frame}
 
 \begin{frame}
 {Ước lượng trạng thái các tasks}
@@ -340,27 +399,27 @@
 	\mathcal{T} = \{task_{1}, task_{2}, ..., task_{K}\}
 \]
 \end{block}
-\pause
 \begin{block}
 {Ước lượng kì vọng tài nguyên khả dụng tại thời điểm thực thi}
 \[
 	available\_resources = resources\_capacity - \sum_{i = 1}^{K}{resources\_usage_{i} \times p_{i}}
 \]
 \begin{itemize}
+	\item $resources\_usage_{i}$ là tài nguyên $task_{i}$ sử dụng 
 	\item $p_{i}$ là xác suất $task_{i}$ còn hoạt động tại thời điểm thực thi
 \end{itemize}
 \end{block}
 \end{frame}
 
-\begin{frame}
-{Mạng Bayesian ước lượng xác suất task còn hoạt động}
-\pause
-\begin{figure}
-		\centering
-		\includegraphics[scale=0.8]{images/job_decomposition.png}
-		\caption{Task trong cùng job}
-	\end{figure}
-\end{frame}
+%\begin{frame}
+%{Mạng Bayesian ước lượng xác suất task còn hoạt động}
+%\pause
+%\begin{figure}
+%		\centering
+%		\includegraphics[scale=0.8]{images/job_decomposition.png}
+%		\caption{Task trong cùng job}
+%	\end{figure}
+%\end{frame}
 
 %\begin{frame}
 %{Mạng Bayesian ước lượng xác suất task còn hoạt động}
@@ -448,16 +507,16 @@
 	\mathcal{L} = \{l_{1}, l_{2}, ..., l_{M}\}
 \]
 \end{block}
-\pause
 \begin{block}
 {Độ mất cân bằng}
+Để thể hiện độ mất cân bằng khối lượng công việc giữa các máy ảo, ta sử dụng phương sai của $\mathcal{L}$
 \[
-	\sigma(\mathcal{L}) = \frac{1}{M} \times \sum_{i = 1}^{M}(l_{i} - \overline{l})^{2}
+	\mathcal{V}(\mathcal{L}) = \frac{1}{M} \times \sum_{i = 1}^{M}(l_{i} - \overline{l})^{2}
 \]
-với 
-\[
-	\overline{l} = \frac{1}{M}\sum_{i = 1}^{M}l_{i}
-\]
+%với 
+%\[
+%	\overline{l} = \frac{1}{M}\sum_{i = 1}^{M}l_{i}
+%\]
 \end{block}
 \end{frame}
 
@@ -472,95 +531,205 @@ với
 
 \begin{frame}
 {Lựa chọn máy tính ảo cho tasks}
+
+	\begin{minipage}[t]{0.4\linewidth}
+		\vspace{0.5cm}
+		Tìm máy ảo cho long-run task: 
+		\begin{itemize}
+			\item Bước 1: Chọn K máy ảo có lượng tài nguyên dành cho long-run tasks nhỏ nhất 
+			\item Bước 2: Trong K máy ảo tìm được, chọn máy có lượng tài nguyên khả dụng cao nhất cho task 
+			\item Bước 3: Cập nhật thông tin task được ghép cặp với máy ảo
+		\end{itemize}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.59\linewidth}
 	\begin{figure}
 		\vspace{1cm}
-		\includegraphics[scale=0.4]{images/balancing_tasks2.png}
+		\includegraphics[scale=0.35]{images/balancing_tasks2.png}
 %		\caption{Lập lịch cho tasks}
 	\end{figure}
+	\vspace{1cm}
+	\end{minipage}
 \end{frame}
 
 \begin{frame}
 {Lựa chọn máy tính ảo cho tasks}
+
+	\begin{minipage}[t]{0.4\linewidth}
+		\vspace{0.5cm}
+		Tìm máy ảo cho long-run task: 
+		\begin{itemize}
+			\item {\color{red}{Bước 1}}: Chọn K máy ảo có lượng tài nguyên dành cho long-run tasks nhỏ nhất 
+			\item Bước 2: Trong K máy ảo tìm được, chọn máy có lượng tài nguyên khả dụng cao nhất cho task 
+			\item Bước 3: Cập nhật thông tin task được ghép cặp với máy ảo
+		\end{itemize}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.59\linewidth}
 	\begin{figure}
 		\vspace{1cm}
-		\includegraphics[scale=0.4]{images/balancing_tasks3.png}
+		\includegraphics[scale=0.35]{images/balancing_tasks3.png}
 %		\caption{Lập lịch cho tasks}
 	\end{figure}
+	\vspace{1cm}
+	\end{minipage}
 \end{frame}
 
 \begin{frame}
 {Lựa chọn máy tính ảo cho tasks}
+
+	\begin{minipage}[t]{0.4\linewidth}
+		\vspace{0.5cm}
+		Tìm máy ảo cho long-run task: 
+		\begin{itemize}
+			\item Bước 1: Chọn K máy ảo có lượng tài nguyên dành cho long-run tasks nhỏ nhất 
+			\item {\color{red}{Bước 2}}: Trong K máy ảo tìm được, chọn máy có lượng tài nguyên khả dụng cao nhất cho task 
+			\item Bước 3: Cập nhật thông tin task được ghép cặp với máy ảo
+		\end{itemize}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.59\linewidth}
 	\begin{figure}
 		\vspace{1cm}
-		\includegraphics[scale=0.4]{images/balancing_tasks4.png}
+		\includegraphics[scale=0.35]{images/balancing_tasks4.png}
 %		\caption{Lập lịch cho tasks}
 	\end{figure}
+	\vspace{1cm}
+	\end{minipage}
 \end{frame}
 
 \begin{frame}
 {Lựa chọn máy tính ảo cho tasks}
+
+	\begin{minipage}[t]{0.4\linewidth}
+		\vspace{0.5cm}
+		Tìm máy ảo cho long-run task: 
+		\begin{itemize}
+			\item Bước 1: Chọn K máy ảo có lượng tài nguyên dành cho long-run tasks nhỏ nhất 
+			\item Bước 2: Trong K máy ảo tìm được, chọn máy có lượng tài nguyên khả dụng cao nhất cho task 
+			\item {\color{red}{Bước 3}}: Cập nhật thông tin task được ghép cặp với máy ảo
+		\end{itemize}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.59\linewidth}
 	\begin{figure}
 		\vspace{1cm}
-		\includegraphics[scale=0.4]{images/balancing_tasks5.png}
+		\includegraphics[scale=0.35]{images/balancing_tasks5.png}
 %		\caption{Lập lịch cho tasks}
 	\end{figure}
+	\vspace{1cm}
+	\end{minipage}
 \end{frame}
 
 \begin{frame}
 {Lựa chọn máy tính ảo cho tasks}
+
+	\begin{minipage}[t]{0.4\linewidth}
+		\vspace{0.5cm}
+		Tìm máy ảo cho batch-job task: 
+		\begin{itemize}
+			\item Bước 1: Chọn K máy ảo có lượng tài nguyên dành cho batch-job tasks nhỏ nhất 
+			\item Bước 2: Trong K máy ảo tìm được, chọn máy có lượng tài nguyên khả dụng cao nhất cho task 
+			\item Bước 3: Cập nhật thông tin task được ghép cặp với máy ảo
+		\end{itemize}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.59\linewidth}
 	\begin{figure}
 		\vspace{1cm}
-		\includegraphics[scale=0.4]{images/balancing_tasks6.png}
+		\includegraphics[scale=0.35]{images/balancing_tasks6.png}
 %		\caption{Lập lịch cho tasks}
 	\end{figure}
+	\vspace{1cm}
+	\end{minipage}
 \end{frame}
 
 \begin{frame}
 {Lựa chọn máy tính ảo cho tasks}
+
+	\begin{minipage}[t]{0.4\linewidth}
+		\vspace{0.5cm}
+		Tìm máy ảo cho batch-job task: 
+		\begin{itemize}
+			\item Bước 1: Chọn K máy ảo có lượng tài nguyên dành cho batch-job tasks nhỏ nhất 
+			\item Bước 2: Trong K máy ảo tìm được, chọn máy có lượng tài nguyên khả dụng cao nhất cho task 
+			\item {Bước 3}: Cập nhật thông tin task được ghép cặp với máy ảo
+		\end{itemize}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.59\linewidth}
 	\begin{figure}
 		\vspace{1cm}
-		\includegraphics[scale=0.4]{images/balancing_tasks7.png}
+		\includegraphics[scale=0.35]{images/balancing_tasks7.png}
 %		\caption{Lập lịch cho tasks}
 	\end{figure}
+	\vspace{1cm}
+	\end{minipage}
 \end{frame}
 
 \begin{frame}
 {Lựa chọn máy tính ảo cho tasks}
+
+	\begin{minipage}[t]{0.4\linewidth}
+		\vspace{0.5cm}
+		Tìm máy ảo cho batch-job task: 
+		\begin{itemize}
+			\item Bước 1: Chọn K máy ảo có lượng tài nguyên dành cho batch-job tasks nhỏ nhất 
+			\item Bước 2: Trong K máy ảo tìm được, chọn máy có lượng tài nguyên khả dụng cao nhất cho task 
+			\item {Bước 3}: Cập nhật thông tin task được ghép cặp với máy ảo
+		\end{itemize}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.59\linewidth}
 	\begin{figure}
 		\vspace{1cm}
-		\includegraphics[scale=0.4]{images/balancing_tasks8.png}
+		\includegraphics[scale=0.35]{images/balancing_tasks8.png}
 %		\caption{Lập lịch cho tasks}
 	\end{figure}
+	\vspace{1cm}
+	\end{minipage}
 \end{frame}
 
 \begin{frame}
 {Lựa chọn máy tính ảo cho tasks}
+
+	\begin{minipage}[t]{0.4\linewidth}
+		\vspace{0.5cm}
+		Tìm máy ảo cho batch-job task: 
+		\begin{itemize}
+			\item Bước 1: Chọn K máy ảo có lượng tài nguyên dành cho batch-job tasks nhỏ nhất 
+			\item Bước 2: Trong K máy ảo tìm được, chọn máy có lượng tài nguyên khả dụng cao nhất cho task 
+			\item {Bước 3}: Cập nhật thông tin task được ghép cặp với máy ảo
+		\end{itemize}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.59\linewidth}
 	\begin{figure}
 		\vspace{1cm}
-		\includegraphics[scale=0.4]{images/balancing_tasks9.png}
+		\includegraphics[scale=0.35]{images/balancing_tasks9.png}
 %		\caption{Lập lịch cho tasks}
 	\end{figure}
+	\vspace{1cm}
+	\end{minipage}
 \end{frame}
 
 \begin{frame}
-{Lựa chọn máy tính ảo cho tasks}
-	\begin{figure}
-		\vspace{1cm}
-		\includegraphics[scale=0.4]{images/balancing_tasks10.png}
-%		\caption{Lập lịch cho tasks}
-	\end{figure}
+	\begin{minipage}[t]{0.39\linewidth}
+		\vspace{2cm}
+		\begin{itemize}
+			\item Dùng mạng Bayesian ước lượng tài nguyên khả dụng 
+			\item Dùng tài nguyên ước lượng để lập lịch cho tasks
+		\end{itemize}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.6\linewidth}
+	\vspace{0.5cm}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.35]{images/bayesian_application.png}		
+		\end{figure}			
+	\end{minipage}
 \end{frame}
-
-%\begin{frame}
-%{Mô hình đề xuất}
-%\begin{block}
-%{\centering Mô hình hoạt động}
-%	\begin{figure}
-%		\centering
-%		\includegraphics[scale=0.4]{images/system_flows.png}	
-%	\end{figure}
-%\end{block}
-%\end{frame}
 
 \section{Đánh giá hiệu năng} 
 
@@ -576,8 +745,21 @@ với
 %\end{frame}
 
 \begin{frame}
-{Kịch bản lập lịch}
+{Thực nghiệm}
+\pause
 % Mô tả dữ liệu mô phỏng 
+
+\begin{block}
+{Mục đích}
+	\begin{itemize}
+		\item Đánh giá hiệu năng so với Worstfit và FCFS
+		\item So sánh hiệu quả của mạng Bayesian
+		\item So sánh độ mất cân bằng trong thời gian chạy với Worstfit
+	\end{itemize}
+\end{block}
+
+\begin{block}
+{Kịch bản}
 \begin{itemize}
 	\item M = 10 máy tính ảo 
 	\item N = 15000 tasks
@@ -585,12 +767,22 @@ với
 	\item $T \sim \mathcal{P}(\lambda = 15)$
 	\item $delay\_time \sim \mathcal{N}(\mu = 5, \sigma = 0.5)$
 \end{itemize}
+\end{block}
 
 \end{frame}
 
-
 \begin{frame}
 {Số liệu so sánh về thời gian}
+
+	\begin{minipage}[t]{0.4\linewidth}
+		\vspace{1.5cm}
+		\begin{itemize}
+			\item Thuật toán đề xuất hoàn thành nhiều tasks hơn so với Worstfit và FCFS
+			\item Thời gian trung bình hoàn thành một task tốt hơn FCFS là 50\%, Worstfit là 20\%
+		\end{itemize}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.59\linewidth}
 \begin{table}[h!]
 	\centering
 	\caption{Kết quả về thời gian chạy của các tasks}
@@ -621,6 +813,7 @@ với
 	\end{tabular}
 	\label{table:finished_tasks}
 \end{table}
+	\end{minipage}
 \end{frame}
 
 \begin{frame}
@@ -629,28 +822,40 @@ với
 \centering
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.85\linewidth]{images/cpu_usage_estimation_1.png}
+  \includegraphics[width=.75\linewidth]{images/cpu_usage_estimation_1.png}
   \caption{Tài nguyên khả dụng tại thời điểm thực thi}
   \label{fig:usage_est_a}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.9\linewidth]{images/cpu_usage_estimation_2.png}
+  \includegraphics[width=.8\linewidth]{images/cpu_usage_estimation_2.png}
   \caption{Sai số với số lượng tasks đang chạy}
    \label{fig:usage_est_b}
 \end{subfigure}
-\caption{Thông số tại thời điểm kết thúc lập lịch}
-\label{fig:usage_est}
 \end{figure}
+\begin{center}
+Mạng Bayesian cho kết quả ước lượng ({\color{red}{màu đỏ}}) có sai số với thực tế ({\color{blue}{màu xanh dương}}) nhỏ hơn so với việc dùng thông tin sai lệch ({\color{purple}{màu tím}}).
+\end{center}
 \end{frame}
 
 \begin{frame}
 {So sánh mức độ mất cân bằng giữa các máy tính}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[scale=0.6]{images/unbalanced_weights.png}
-	\caption{Mức độ mất cân bằng trong quá trình hoạt động}
-\end{figure}
+
+\begin{minipage}[t]{0.4\linewidth}
+	\vspace{0.5cm}
+	\begin{itemize}
+		\item Độ mất cân bằng giảm sâu được thời điểm lập lịch (500, 520, ...) nhưng không duy trì được lâu 
+		\item Thuật toán đề xuất cho độ mất cân bằng ổn định và nhỏ hơn so với Worstfit
+	\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.59\linewidth}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[scale=0.45]{images/unbalanced_weights.png}
+		\caption{Độ mất cân bằng trong quá trình hoạt động}
+	\end{figure}
+\end{minipage}
 \end{frame}
 
 \section{Kết luận}
@@ -662,19 +867,16 @@ với
 \begin{block}
 {Kết luận}
 	\begin{itemize}
-		\item <2-> Thuật toán đã cải thiện được sai số giữa thời điểm lập lịch và thực thi
-		\item <3->Có thể cân bằng được khối lượng công việc trong quá trình chạy 
+		\item Thuật toán đã cải thiện được sai số giữa thời điểm lập lịch và thực thi
+		\item Có thể cân bằng được khối lượng công việc trong quá trình chạy 
 	\end{itemize}
 \end{block}
-
-\pause
-\pause
 
 \begin{block}
 {Định hướng phát triển}
 \begin{itemize}
-	\item <5-> Phát triển mô hình đồ thị Bayesian phù hợp với học liên tục 
-	\item <6-> Mở rộng bài sang bài toán resource scaling
+	\item Phát triển mô hình đồ thị Bayesian phù hợp với học liên tục 
+	\item Mở rộng bài sang bài toán resource scaling
 \end{itemize}
 \end{block}
 \end{frame}
