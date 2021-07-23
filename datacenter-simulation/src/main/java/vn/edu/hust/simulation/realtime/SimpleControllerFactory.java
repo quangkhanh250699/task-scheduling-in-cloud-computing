@@ -12,7 +12,7 @@ import java.security.PrivateKey;
 
 public class SimpleControllerFactory implements IControllerFactory{
 
-    private double MAX_WAITING_TIME = 5;
+    private double MAX_WAITING_TIME = 10;
     private int MAX_WATING_TASKS = 100;
 
     private Simulation simulation;

@@ -10,7 +10,7 @@ import vn.edu.hust.simulation.algos.myalgo.myheuristic.WorstfitAlgo;
 
 public class AlgoSelector {
 
-    public final String DATA_PATH = "/home/quangkhanh/F/GraduationProject/data-exploration/experiments/data/new/";
+    public final String DATA_PATH = "/home/quangkhanh/F/task-scheduling-in-cloud-computing/data-exploration/experiments/data/new/";
     private String CLOUDLET_DATA_PATH;
     private String VM_DATA_PATH;
     private String ALGO_SOLVE_TIME;

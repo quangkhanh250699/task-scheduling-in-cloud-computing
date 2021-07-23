@@ -105,14 +105,11 @@
       Cloud Computing}
 }
 
-\subtitle[Task Scheduling Algorithm]
-{
-      \textbf{}
-}
 
 \author[Quang Khanh]
 {     Sinh viên thực hiện: Trương Quang Khánh \\
-      { Giảng viên hướng dẫn: TS. Nguyễn Bình Minh}
+	 Lớp: KSTN-CNTT Khóa 62 \\
+      { Giảng viên hướng dẫn: PSG. Nguyễn Bình Minh}
 }
 
 \institute[]
@@ -124,12 +121,33 @@
 %	  Viện Công nghệ Thông tin và Truyền thông
 }
 
-\date{\today}
+\date{Ngày 9 tháng 7 năm 2021}
 
 %-------------------------------------------------------
 % THE BODY OF THE PRESENTATION
 %-------------------------------------------------------
 
+\setbeamertemplate{section in toc}[sections numbered]
+
+\setbeamertemplate{footline}{
+    \hbox{%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=3ex,dp=1.5ex,leftskip=2ex,rightskip=2ex]{page footer}%
+        \usebeamerfont{title in head/foot}%
+        \insertshorttitle \hfill
+            \color{white}{\insertsection} \hfill
+    \end{beamercolorbox}}%
+}
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionnumber ~. \insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
 
 \begin{document}
 
@@ -219,23 +237,23 @@
 \end{minipage}
 \end{frame}
 
-\begin{frame}
-{Các dạng lập lịch}
-\begin{block}
-{Hai kiểu lời giải phổ biển cho bài toán}
-\begin{itemize}
-	\item Có N tasks, M máy ảo, lời giải là cách ghép cặp task -> máy ảo cho N tasks. 
-	\item Có K nhóm của tasks, M máy ảo, lời giải là cách phân chia 
-		\[
-			\Theta = \{\theta_{1}, ..., \theta_{K}\}
-		\]
-		với \begin{itemize}
-			\item $\theta_{i}$ là số lượng máy tính ảo được phân cho nhóm i 
-			\item $\sum_{i = 1}^{K}\theta_{i} = M$
-		\end{itemize}
-\end{itemize}
-\end{block}
-\end{frame}
+%\begin{frame}
+%{Các dạng lập lịch}
+%\begin{block}
+%{Hai kiểu lời giải phổ biển cho bài toán}
+%\begin{itemize}
+%	\item Có N tasks, M máy ảo, lời giải là cách ghép cặp task -> máy ảo cho N tasks. 
+%	\item Có K nhóm của tasks, M máy ảo, lời giải là cách phân chia 
+%		\[
+%			\Theta = \{\theta_{1}, ..., \theta_{K}\}
+%		\]
+%		với \begin{itemize}
+%			\item $\theta_{i}$ là số lượng máy tính ảo được phân cho nhóm i 
+%			\item $\sum_{i = 1}^{K}\theta_{i} = M$
+%		\end{itemize}
+%\end{itemize}
+%\end{block}
+%\end{frame}
 
 \begin{frame}
 {Các thuật toán phổ biển}
@@ -264,12 +282,12 @@ Là những thuật toán đưa ra lời giải chấp nhận được, thỏa m
 	\begin{minipage}[t]{0.4\linewidth}
 		\begin{block}{Trạng thái tài nguyên}
 		\begin{itemize}
-			\item <2-> Tại thời điểm $t_{1}$
+			\item Tại thời điểm $t_{1}$
 			\begin{itemize}
 				\item available\_cpu = $c_{1}$
 				\item available\_memory = $m_{1}$
 			\end{itemize}
-			\item <2-> Tại thời điểm $t_{2}$
+			\item  Tại thời điểm $t_{2}$
 			\begin{itemize}
 				\item available\_cpu = $c_{2}$
 				\item available\_memory = $m_{2}$
@@ -286,11 +304,10 @@ Là những thuật toán đưa ra lời giải chấp nhận được, thỏa m
 		\end{figure}
 	\end{minipage}
 	\pause
-	\pause
 	\begin{center}
 		\begin{block}
 		{\centering Vấn đề 1}
-				\centering $c_{1} \neq c_{2}$ hoặc $m_{1} \neq m_{2}$
+				\centering $c_{1} \neq c_{2}$ hoặc $m_{1} \neq m_{2}$ làm mất sự tối ưu của nghiệm thuật toán lập lịch 
 		\end{block}
 	\end{center}
 \end{frame}
@@ -364,7 +381,6 @@ Là những thuật toán đưa ra lời giải chấp nhận được, thỏa m
 
 \begin{frame}
 {Ước lượng trạng thái các tasks}
-\pause
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.5]{images/predicting_status1.png}
@@ -386,89 +402,32 @@ Là những thuật toán đưa ra lời giải chấp nhận được, thỏa m
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.5]{images/predicting_status3.png}
-	\caption{Trạng thái tài nguyên tại thời điểm lập lịch và thực thi}
 \end{figure}
+\begin{center}
+	\large{Xác định xác suất tasks đang chạy còn hoạt động sau quá trình lập lịch để ước lượng trạng thái của máy ảo tại thời điểm thực thi}
+\end{center}
 \end{frame}
 
 \begin{frame}
 {Ước lượng tài nguyên khả dụng}
 \pause
-\begin{block}
 {Tập các tasks đang chạy trên máy tính ảo tại thời điểm lập lịch}
 \[
 	\mathcal{T} = \{task_{1}, task_{2}, ..., task_{K}\}
 \]
-\end{block}
-\begin{block}
-{Ước lượng kì vọng tài nguyên khả dụng tại thời điểm thực thi}
-\[
-	available\_resources = resources\_capacity - \sum_{i = 1}^{K}{resources\_usage_{i} \times p_{i}}
-\]
+Kỳ vọng tài nguyên sử dụng của một task: 
+\begin{equation}
+	E[task\_usage_{i}] = resources\_usage_{i} \times p_{i} + 0 * (1 - p_{i})
+\end{equation}
 \begin{itemize}
 	\item $resources\_usage_{i}$ là tài nguyên $task_{i}$ sử dụng 
 	\item $p_{i}$ là xác suất $task_{i}$ còn hoạt động tại thời điểm thực thi
 \end{itemize}
-\end{block}
+Kì vọng tài nguyên khả dụng tại thời điểm thực thi: 
+\begin{equation}
+	available\_resources = resources\_capacity - \sum_{i = 1}^{K}{resources\_usage_{i} \times p_{i}}
+\end{equation}
 \end{frame}
-
-%\begin{frame}
-%{Mạng Bayesian ước lượng xác suất task còn hoạt động}
-%\pause
-%\begin{figure}
-%		\centering
-%		\includegraphics[scale=0.8]{images/job_decomposition.png}
-%		\caption{Task trong cùng job}
-%	\end{figure}
-%\end{frame}
-
-%\begin{frame}
-%{Mạng Bayesian ước lượng xác suất task còn hoạt động}
-%\begin{minipage}[t]{0.58\linewidth}
-%	\begin{block}
-%	{Xét trường hợp job gồm 2 tasks}
-%	\begin{itemize}
-%		\item Gọi $J, T_{1}, T_{2}$ là biến ngẫu nhiên thể hiện trạng thái của $job, task_{1}, task_{2}$
-%%		\item r là hoạt động, f là kết thúc 
-%	\end{itemize}
-%	\end{block}
-%	\begin{block}
-%	{Điều kiện độc lập}
-%		$T_{1}$ và $T_{2}$ độc lập nếu biết $J$
-%		\begin{align*}
-%			P(J, T_{1},& T_{2}) = P(J) \times P(T_{1}, T_{2} \mid J) \\
-%				&= \color{red}{P(J) \times P(T_{1} \mid J) \times P(T_{2} \mid J)}
-%		\end{align*}
-%	\end{block}
-%%	\begin{align*}
-%%		P(T_{1} = f \mid &T_{2} = f) = \\
-%%			& \sum_{s \in \{r, f\}}{P(T_{1} = f, J = s \mid T_{2} = f)}	
-%%	\end{align*}
-%	
-%\end{minipage}
-%\hfill
-%\begin{minipage}[t]{0.4\linewidth}
-%	\vspace{1.5cm}
-%	\begin{figure}
-%		\centering
-%		\includegraphics[scale=0.5]{images/job_decomposition2.png}
-%		\caption{Task trong cùng job}
-%	\end{figure}
-%\end{minipage}
-%\end{frame}
-
-%\begin{frame}
-%{Mạng Bayesian ước lượng trạng thái tasks}
-%% Đề xuất mô hình Bayes dự đoán trạng thái của các tasks 
-%\begin{block}
-%{Biểu diễn mạng}
-%\begin{figure}[h!]
-%	\centering 
-%	\includegraphics[scale=0.6]{images/job_network.png}
-%	\caption{Mạng Bayesian thể hiện quan hệ giữa các tasks trong cùng một job}
-%	\label{fig:job_network}
-%\end{figure}
-%\end{block}
-%\end{frame}
 
 \begin{frame}
 {Ví dụ minh họa mạng Bayesian}
@@ -502,21 +461,19 @@ Là những thuật toán đưa ra lời giải chấp nhận được, thỏa m
 % Đề xuất thuật toán cân bằng khối lượng công việc giữa các máy ảo 
 \pause
 \begin{block}
-{Khối lượng công việc của M máy ảo}
-\[
-	\mathcal{L} = \{l_{1}, l_{2}, ..., l_{M}\}
-\]
+{Độ mất cân bằng}
+Khối lượng công việc của M máy ảo: 
+\begin{center}
+	$\mathcal{L} = \{l_{1}, l_{2}, ..., l_{M}\}$
+\end{center}
+Để thể hiện độ mất cân bằng khối lượng công việc giữa các máy ảo, ta sử dụng phương sai của $\mathcal{L}$
+\begin{center}
+	$\mathcal{V}(\mathcal{L}) = \frac{1}{M} \times \sum_{i = 1}^{M}(l_{i} - \overline{l})^{2}$
+\end{center}
 \end{block}
 \begin{block}
-{Độ mất cân bằng}
-Để thể hiện độ mất cân bằng khối lượng công việc giữa các máy ảo, ta sử dụng phương sai của $\mathcal{L}$
-\[
-	\mathcal{V}(\mathcal{L}) = \frac{1}{M} \times \sum_{i = 1}^{M}(l_{i} - \overline{l})^{2}
-\]
-%với 
-%\[
-%	\overline{l} = \frac{1}{M}\sum_{i = 1}^{M}l_{i}
-%\]
+{Mục tiêu của thuật toán lập lịch}
+Tối thiểu hóa độ mất cân bằng của hệ thống \textbf{trong thời gian hoạt động}.
 \end{block}
 \end{frame}
 
@@ -714,11 +671,12 @@ Là những thuật toán đưa ra lời giải chấp nhận được, thỏa m
 \end{frame}
 
 \begin{frame}
+{Mô hình lập lịch đề xuất}
 	\begin{minipage}[t]{0.39\linewidth}
 		\vspace{2cm}
 		\begin{itemize}
 			\item Dùng mạng Bayesian ước lượng tài nguyên khả dụng 
-			\item Dùng tài nguyên ước lượng để lập lịch cho tasks
+			\item \textbf{Dùng tài nguyên ước lượng để lập lịch cho tasks}
 		\end{itemize}
 	\end{minipage}
 	\hfill
@@ -733,29 +691,17 @@ Là những thuật toán đưa ra lời giải chấp nhận được, thỏa m
 
 \section{Đánh giá hiệu năng} 
 
-%\begin{frame}
-%{Hệ thống mô phỏng}
-%% Mô tả hệ thống mô phỏng
-%\begin{figure}[h!]
-%	\centering 
-%	\includegraphics[scale=0.5]{images/simulation_system.png}
-%	\caption{Mô hình mô phỏng}
-%	\label{fig:simuation_system}
-%\end{figure}
-%\end{frame}
-
 \begin{frame}
 {Thực nghiệm}
-\pause
 % Mô tả dữ liệu mô phỏng 
 
 \begin{block}
 {Mục đích}
-	\begin{itemize}
+	\begin{enumerate}
 		\item Đánh giá hiệu năng so với Worstfit và FCFS
-		\item So sánh hiệu quả của mạng Bayesian
-		\item So sánh độ mất cân bằng trong thời gian chạy với Worstfit
-	\end{itemize}
+		\item Đánh giá hiệu quả của mạng Bayesian
+		\item So sánh độ mất cân bằng trong thời gian chạy với Worstfit	
+	\end{enumerate}
 \end{block}
 
 \begin{block}
@@ -765,7 +711,7 @@ Là những thuật toán đưa ra lời giải chấp nhận được, thỏa m
 	\item N = 15000 tasks
 	\item K = 3
 	\item $T \sim \mathcal{P}(\lambda = 15)$
-	\item $delay\_time \sim \mathcal{N}(\mu = 5, \sigma = 0.5)$
+	\item $delay\_time \sim \mathcal{N}(\mu = 5, \sigma = 0.5^{2})$
 \end{itemize}
 \end{block}
 
@@ -844,8 +790,8 @@ Mạng Bayesian cho kết quả ước lượng ({\color{red}{màu đỏ}}) có 
 \begin{minipage}[t]{0.4\linewidth}
 	\vspace{0.5cm}
 	\begin{itemize}
-		\item Độ mất cân bằng giảm sâu được thời điểm lập lịch (500, 520, ...) nhưng không duy trì được lâu 
-		\item Thuật toán đề xuất cho độ mất cân bằng ổn định và nhỏ hơn so với Worstfit
+		\item Độ mất cân bằng giảm sâu tại thời điểm lập lịch (500, 520, ...) nhưng không duy trì được lâu 
+		\item Thuật toán đề xuất cho độ mất cân bằng \textbf{ổn định và nhỏ hơn} so với Worstfit
 	\end{itemize}
 \end{minipage}
 \hfill
@@ -863,7 +809,7 @@ Mạng Bayesian cho kết quả ước lượng ({\color{red}{màu đỏ}}) có 
 \begin{frame}
 {Kết luận và định hướng}
 % Trình bày kết quả đạt được 
-\pause
+
 \begin{block}
 {Kết luận}
 	\begin{itemize}
@@ -872,6 +818,7 @@ Mạng Bayesian cho kết quả ước lượng ({\color{red}{màu đỏ}}) có 
 	\end{itemize}
 \end{block}
 
+\pause
 \begin{block}
 {Định hướng phát triển}
 \begin{itemize}
@@ -883,7 +830,7 @@ Mạng Bayesian cho kết quả ước lượng ({\color{red}{màu đỏ}}) có 
 
 {\1
 \begin{frame}[plain,noframenumbering]
-  \finalpage{Thank You For Listening!}
+  \finalpage{\Large\textit{Em xin trân thành cảm ơn Thầy cô và mọi người đã lắng nghe}}
 \end{frame}}
 
 \end{document}

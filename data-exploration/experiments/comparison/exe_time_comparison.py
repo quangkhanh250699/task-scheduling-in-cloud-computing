@@ -25,7 +25,7 @@ cdf5 = cdf5[cdf5.finishTime < max_timestamp]
 print("------------------ Round Robin--------------------")
 # print(cdf1.exeTime.describe())
 print("------------------ Best Fit --------------------")
-# print(cdf2.exeTime.describe())
+# print(cdf2.exeTime.describe()).
 print("------------------ My algorithm--------------------")
 # print(cdf3.exeTime.describe())
 print("------------------ Balancing algorithm--------------------")
@@ -34,7 +34,7 @@ print("------------------ Worstfit algorithm--------------------")
 print(cdf5.exeTime.describe())
 #%%
 result = pd.DataFrame({
-                'FCFS': cdf1.exeTime.describe(),
+                # 'FCFS': cdf1.exeTime.describe(),
                 'Worstfit': cdf5.exeTime.describe(),
                 'Balancing Algo': cdf4.exeTime.describe()
             })

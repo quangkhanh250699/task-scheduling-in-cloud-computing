@@ -36,7 +36,7 @@
 \contentsline {subsection}{\numberline {5.5.1}Số lượng task hoàn thành trong một đơn vị thời gian}{37}{subsection.5.5.1}%
 \contentsline {subsection}{\numberline {5.5.2}Ảnh hưởng của thời gian trễ tới sai số}{38}{subsection.5.5.2}%
 \contentsline {subsection}{\numberline {5.5.3}Ảnh hưởng của thời gian trễ tới kết quả lập lịch}{40}{subsection.5.5.3}%
-\contentsline {subsection}{\numberline {5.5.4}Hiểu quả của việc ước lượng tài nguyên}{41}{subsection.5.5.4}%
+\contentsline {subsection}{\numberline {5.5.4}Hiệu quả của việc ước lượng tài nguyên}{41}{subsection.5.5.4}%
 \contentsline {subsection}{\numberline {5.5.5}Sự mất cân bằng khối lượng công việc giữa các máy trong quá trình hoạt động}{42}{subsection.5.5.5}%
 \contentsline {chapter}{\numberline {6}Kết luận và định hướng nghiên cứu}{44}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Kết quả đạt được}{44}{section.6.1}%

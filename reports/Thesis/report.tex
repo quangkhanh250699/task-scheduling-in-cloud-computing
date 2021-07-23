@@ -92,10 +92,12 @@ Cuối cùng, tôi muốn gửi lời cảm ơn chân thành nhất tới thầy
 
 \section*{TÓM TẮT NỘI DUNG}
 % 1 page 
-Hiện nay, công nghệ thông tin đã trở thành một phần thiết yếu trong mọi lĩnh vực của cuộc sống, từ học tập, giải trí cho đến y tế, dịch vụ ... Trong xã hội hiện đại, nhu cầu về hạ tầng tính toán đã trở lên cần thiết, phổ biến giữa các tổ chức, doanh nghiệp. Điện toán đám mây, hay có tên là \textbf{cloud computing}, nổi lên và trở thành một giải pháp hiệu quả, cung cấp cơ sở hạ tầng thực thi công việc, tính toán, lưu trữ dữ liệu cho người dùng. Trong môi trường cloud computing, lập lịch là một phương pháp phân phối tài nguyên cho các công việc được gửi tới, mục đích làm tăng độ hiệu quả và chất lượng dịch vụ, tận dụng tối đa tài nguyên hệ thống. Do đặc thù của hệ thống cloud computing, các công việc được gửi đến hệ thống đến hệ thống liên tiếp và không xác định trước, thuật toán lập lịch cần phải thích nghi với việc trạng thái hệ thống, khối lượng công việc thay đổi liên tục theo thời gian thực. \\
-Do yếu tố khó xác định của môi trường trong quá trình lập lịch, các thuật toán đang được sử dụng thường đơn giản và "heuristic". Các thành phần thay đổi nhanh chóng trong hệ thống như tài nguyên khả dụng, trạng thái của các thành phần trong hệ thống, ... đều chưa được xem xét đến khi đưa ra quyết định lập lịch. \\
-Đồ án này đề xuất sử dụng mô hình đồ thị xác suất để ước lượng thành phần dễ dàng thay đổi trong hệ thống. Cụ thể, mô hình được đề xuất sử dụng mạng Bayesian để tính kỳ vọng cho các thành phần "không chắc chắn" (vd: tài nguyên khả dụng sau 10 giây). Các hàm tối ưu trong quá trình lập lịch cũng sẽ được tính toán dựa trên những thông tin ước lượng, thay vì không xem xét. \\
-Mục đích của đồ án này nhằm nghiên cứu, đánh giá sự ảnh hưởng của các yếu tố ngẫu nhiên trong quá trình hoạt động tới kết quả của các thuật toán lập lịch. 
+Trong môi trường cloud computing, lập lịch là một phương pháp phân phối tài nguyên cho các công việc được gửi tới, mục đích làm tăng độ hiệu quả và chất lượng dịch vụ, tận dụng tối đa tài nguyên hệ thống. Do đặc thù của hệ thống cloud computing, các công việc được gửi đến hệ thống đến hệ thống liên tiếp và không xác định trước, thuật toán lập lịch cần phải thích nghi với việc trạng thái hệ thống, khối lượng công việc thay đổi liên tục theo thời gian thực. Đồ án này đề xuất sử dụng mô hình đồ thị xác suất để ước lượng thành phần dễ dàng thay đổi trong hệ thống. Mô hình được đề xuất sử dụng mạng Bayesian để tính kỳ vọng cho các thành phần "không chắc chắn" (vd: tài nguyên khả dụng sau 10 giây), sau đó dùng thông tin ước lượng được để lập lịch. 
+
+%Hiện nay, công nghệ thông tin đã trở thành một phần thiết yếu trong mọi lĩnh vực của cuộc sống, từ học tập, giải trí cho đến y tế, dịch vụ ... Trong xã hội hiện đại, nhu cầu về hạ tầng tính toán đã trở lên cần thiết, phổ biến giữa các tổ chức, doanh nghiệp. Điện toán đám mây, hay có tên là \textbf{cloud computing}, nổi lên và trở thành một giải pháp hiệu quả, cung cấp cơ sở hạ tầng thực thi công việc, tính toán, lưu trữ dữ liệu cho người dùng. Trong môi trường cloud computing, lập lịch là một phương pháp phân phối tài nguyên cho các công việc được gửi tới, mục đích làm tăng độ hiệu quả và chất lượng dịch vụ, tận dụng tối đa tài nguyên hệ thống. Do đặc thù của hệ thống cloud computing, các công việc được gửi đến hệ thống đến hệ thống liên tiếp và không xác định trước, thuật toán lập lịch cần phải thích nghi với việc trạng thái hệ thống, khối lượng công việc thay đổi liên tục theo thời gian thực. \\
+%Do yếu tố khó xác định của môi trường trong quá trình lập lịch, các thuật toán đang được sử dụng thường đơn giản và "heuristic". Các thành phần thay đổi nhanh chóng trong hệ thống như tài nguyên khả dụng, trạng thái của các thành phần trong hệ thống, ... đều chưa được xem xét đến khi đưa ra quyết định lập lịch. \\
+%Đồ án này đề xuất sử dụng mô hình đồ thị xác suất để ước lượng thành phần dễ dàng thay đổi trong hệ thống. Cụ thể, mô hình được đề xuất sử dụng mạng Bayesian để tính kỳ vọng cho các thành phần "không chắc chắn" (vd: tài nguyên khả dụng sau 10 giây). Các hàm tối ưu trong quá trình lập lịch cũng sẽ được tính toán dựa trên những thông tin ước lượng, thay vì không xem xét. \\
+%Mục đích của đồ án này nhằm nghiên cứu, đánh giá sự ảnh hưởng của các yếu tố ngẫu nhiên trong quá trình hoạt động tới kết quả của các thuật toán lập lịch. 
 
 	
 \newpage
@@ -168,9 +170,9 @@ Xét hệ thống có M máy tính ảo, cần thực thi N tasks.
 	\item $\mathcal{F}(S)$ là hàm tối ưu (có thể là giá trị vô hướng hoặc là vector trong trường hợp xét nhiều hơn 2 mục tiêu) của một cách ghép cặp.
 \end{itemize}
 Không mất tính tổng quát, giả sử bài toán yêu cầu cực tiểu hóa hàm mục tiêu, vì nếu ngược lại thì có thể đổi dấu của nó. Ta cần tìm $\mathcal{S^{*}}$ sao cho: 
-\begin{equation*}
+\begin{equation}
 	\mathcal{S^{*}} = argmin_{\mathcal{S} \in \mathcal{U}}\mathcal{F}(\mathcal{S})
-\end{equation*}
+\end{equation}
 
 \section{Lập lịch thời gian thực trong môi trường cloud computing}
 \label{realtime}
@@ -324,13 +326,13 @@ Tóm lại, với một mô hình đồ thị xác suất, có ba vấn đề ch
 Trước khi tìm hiểu về mạng Bayesian, ta đề cập lại một số khái niệm của lý thuyết xác suất. \\
 Kí hiệu $A \perp B$ | $C$ tức là A độc lập với B khi biết C, ở đây A, B, C đều là các biến ngẫu nhiên. \\
 Ta có 
-\[
+\begin{equation}
 	A \perp B \mid C \rightarrow P(A,B \mid C) = P(A \mid C)P(B \mid C)
-\]
+\end{equation}
 Phương pháp phân tích chuỗi xác suất Bayesian: 
-\[
+\begin{equation}
 	P(A_{1}, A_{2}, ..., A_{n}) = P(A_{1})P(A_{2} \mid A_{1}) ... P(A_{n} \mid A_{1} ... A_{n-1})
-\]
+\end{equation}
 Với cách này, $P(A_{1}, A_{2}, ..., A_{n})$ được phân tích thành chuỗi các xác suất thành phần, trong đó có $P(A_{n} \mid A_{1} ... A_{n-1})$. Ta thấy rằng độ phức tạp khi tính $P(A_{n} \mid A_{1} ... A_{n-1})$ không hề thua kém $P(A_{1}, A_{2}, ..., A_{n})$, và sẽ tốn kém hơn nếu tính cả các nhân tử khác. Nhưng trong trường hợp giữa các biến tồn tại các điều kiện độc lập, mạng Bayesian có thể giúp làm đơn giản rất nhiều trong việc biểu diễn các phân phối trên.\\
 Hãy xem xét một trường hợp cụ thể như sau. Một hệ thống thực hiện công việc được gửi tới từ người dùng. 
 Việc thực thi các công việc đó làm trạng thái của hệ thống thay đổi. Tại thời điểm $t_{i}$, ta quan sát được trạng thái hệ thống là $S_{i}$, và dùng thông tin đó để lập lịch cho N công việc đang đợi ở hàng chờ. Thời gian lập lịch cho N công việc đó là D. Sau khi lập lịch xong, tại thời điểm $t_{i + 1} = t_{i} + D$, ta muốn biết trạng thái của hệ thống $S_{i+1}$ có thay đổi hay không. Trong bài toán này, tồn tại một số điều kiện xác suất sau: 
@@ -378,18 +380,18 @@ Gọi $\mathcal{D}$ là không gian sự kiện của biến D. Ta có thể ph�
 \end{align*}
 Dựa vào đồ thị, ta có thể tính được $P(D \mid N), P(S_{i+1} \mid S_{i}, D)$ và từ đó trả lời truy vấn bên trên. \\
 Ngoài ra, còn có thể tìm xem $S_{i + 1}$ có khả năng nhận giá trị nào nhất, dựa vào truy vấn MAP (Maximum a Posteriori). 
-\begin{equation*}
+\begin{equation}
 	MAP(S_{i+1} \mid S_{i} = s_{1}, N = n_{0}) = arg\underset{s}maxP(S_{i + 1} = s \mid S_{i} = s_{1}, N = n_{0})
-\end{equation*}
+\end{equation}
 Truy vấn trên đồ thị xác suất còn có một ưu điểm là ta có thể dựa vào cấu trúc dữ liệu đồ thị để giảm độ phức tạp trong quá trình tính toán truy vấn, điển hình như thuật toán Belief Propagation\cite{29}.\\
 
 \subsection{Learning}
 Trong nhiều trường hợp, con người không thể cung cấp được "kiến thức" cho đồ thị do khối lượng quá lớn và cần đòi hỏi sự hiểu biết về nhiều lĩnh vực, chuyên ngành. Ngoài ra, các phân phối của các biến có thể thay đổi theo thời gian. Khi đó, một giải pháp hiệu quả là chúng ta cho mô hình đồ thị học, trích rút tri thức từ bộ dữ liệu được sinh ra. \\
 Trong bài toán ví dụ, khi ta muốn tính xác suất $P(N, D, S_{i}, S_{i+1})$, ta cần biết được giá trị của các thành phần $P(N)$, $P(D \mid N)$, $P(S_{i})$, $P(S_{i+1} \mid S_{i}, D)$, có thể hiểu là các tham số của mạng. Các giá trị này sẽ được cung cấp bởi những chuyên gia, hoặc sẽ được học từ dữ liệu.\\
 Bài toán học trong đồ thị xác suất bản chất giống như một bài toán tối ưu. Xét $\Omega = \{x_{1}, x_{2}, ..., x_{m}\}$ là tập dữ liệu, $\theta$ là vector tham số của mạng, $\Theta$ là tập giá trị của $\theta$. Ta cần phải tìm giá trị $\theta^{*}$ sao cho likelihood của bộ dữ liệu đạt cực đại, tức là: 
-\begin{equation*}
+\begin{equation}
 	\theta^{*} = arg\underset{\theta \in \Theta}maxP(\Omega \mid \theta)
-\end{equation*}
+\end{equation}
 Các phương pháp học trong mạng Bayesian đã được trình bày chi tiết trong \textit{Probabilistic Graphical Model: Princibles and Techniques}\cite{28}, nếu có thời gian xin hãy xem đến cuốn sách này. 
 
 \newpage
@@ -448,14 +450,14 @@ là vector mang thông tin tài nguyên của máy ảo, lần lượt là cpu, 
 \end{enumerate}
 
 Lập lịch là công việc tìm hàm ghép cặp task với máy ảo 
-\[
-f: \mathcal{C} \rightarrow \mathcal{V}
-\]
+\begin{equation}
+	f: \mathcal{C} \rightarrow \mathcal{V}
+\end{equation}
 với $\mathcal{C}$ là không gian các tasks.\\
 Với mỗi máy tính ảo $vm_{i}$, $r_{i} = \{task_{i1}, ..., task_{ik}\}$ là tập các tasks đang được chạy trong nó. Trong khi lập lịch, ta cần đảm bảo được điều kiện tài nguyên của máy tính phải lớn hơn tổng nhu cầu sử dụng của các tasks: 
-\[
+\begin{equation}
 	vm_{i}.v \geq \sum_{j = 1}^{k}task_{ij}.c
-\]
+\end{equation}
 Trong trường hợp tài nguyên không đủ, các tasks có mức ưu tiên thấp hơn sẽ bị dừng lại hoặc hủy và trả về hàng đợi để nhường tài nguyên cho các tasks còn lại. 
 \begin{figure}
 	\centering
@@ -559,9 +561,9 @@ Trong hình ~\ref{fig:statechange1}, tại thời điểm $t_{1}$ khi bắt đ�
 
 \noindent
 Trong thuật toán~\ref{alg:1}, ở dòng số 5, ta dùng thuật toán Belief Propagation~\cite{29} trên mạng Bayesian để ước lượng P(task is running at $t_{2}$), và kỳ vọng tài nguyên sử dụng sẽ là xác suất task còn đang chạy (tức còn chiếm tài nguyên) nhân với tài nguyên task sử dụng. Nên nhớ rằng công việc ước lượng này là một phần của thuật toán lập lịch, nên thời gian chênh lệch 
-\[
+\begin{equation}
 	\delta_{t} = t_{2} - t_{1} = time_{inference} + time_{matching} + network\_delay
-\]
+\end{equation}
 có thể ước lượng được. 
 Trong những trường hợp thời gian chênh lệch không đáng kể, $\delta_{t} < \epsilon$, ví dụ như số lượng task cần được lập lịch rất ít, ta sẽ không thực hiện ước lượng vì sự sai lệch không đáng kể.
 
@@ -569,21 +571,21 @@ Trong những trường hợp thời gian chênh lệch không đáng kể, $\de
 \label{proposed_algo}
 Sau khi ước lượng được tài nguyên khả dụng của hệ thống tại thời điểm kết thúc lập lịch, ta cần ghép cặp giữa tasks và máy ảo. Mục tiêu của thuật toán ghép cặp là ổn định tính load-balancing trong quá trình chạy, giải quyết vấn đề được đưa ra trong mục~\ref{unload_balancing}. Ý tưởng tiếp cận là ta sẽ cố gắng cân bằng tài nguyên sử dụng giữa các máy ảo và cân bằng lượng tài nguyên phân phối cho batch-job giữa các máy ảo.\\
 Trước tiên, ta đề xuất thuật toán cân bằng khối lượng công việc giữa các máy ảo~\ref{alg:2}. Xét 
-\[
+\begin{equation}
 	\mathcal{L} = \{l_{1}, l_{2}, ..., l_{M}\}
-\]
+\end{equation}
 là tập biểu diễn khối lượng công việc của M máy ảo. Ta coi độ mất cân bằng của hệ thống chính là phương sai tập $\mathcal{L}$: 
-\[
+\begin{equation}
 	\sigma(\mathcal{L}) = \frac{1}{M} \times \sum_{i = 1}^{M}(l_{i} - \overline{l})^{2}
-\]
+\end{equation}
 với 
 \[
 	\overline{l} = \frac{1}{M}\sum_{i = 1}^{M}l_{i}
 \]
-Đầu vào của thuật toán sẽ là tập các tasks với khối lượng công việc $\mathcal{C} = \{c_{1}, ..., c_{N}\}$, ta sẽ đưa ra cách phân phối chúng đến máy ảo sao cho sự mất cân bằng của hệ thống là nhỏ nhất. Trọng số của một cách ghép cặp $task_{i} \rightarrow vm_{j}$ là chênh lệch của $\sigma(\mathcal{L})$ trước và sau khi ghép cặp.
-\[
+Đầu vào của thuật toán sẽ là tập các tasks với khối lượng công việc $\mathcal{C} = \{c_{1}, ..., c_{N}\}$, ta sẽ đưa ra cách phân phối chúng đến máy ảo sao cho sự mất cân bằng của hệ thống là nhỏ nhất. Trọng số của một cách ghép cặp $task_{i} \rightarrow vm_{j}$ là chênh lệch của $\sigma(\mathcal{L})$ trước và sau khi ghép cặp: 
+\begin{equation}
 	\Delta_{L}(task_{i} \rightarrow vm_{j}) = \frac{1}{M}[(l_{j} + c_{i} - \overline{l^{'}})^{2} - (l_{i} - \overline{l})^{2}]
-\]
+\end{equation}
 với 
 \[
 	\overline{l^{'}} = \frac{1}{M}(\sum_{k = 1}^{M}l_{k} + c_{i})
@@ -621,19 +623,19 @@ task_{ij}.type =
 	\end{cases}
 \]
 Ta xem xét tài nguyên đã được sử dụng là tổng của những phần dành cho long-running tasks với những phần dành cho batch-job tasks. Dựa vào thuật toán ~\ref{alg:1}, ta tính kỳ vọng lượng tài nguyên mà các batch-job tasks sử dụng tại thời điểm kết thúc lập lịch là: 
-\[
+\begin{equation}
 	vm_{i}.EshortUsage = \sum_{j=1}^{k}task_{ij}.c \times task_{ij}.type \times prob_{task_{ij}}
-\]
+\end{equation}
 
 \noindent
 $vm_{i}.longUsage$ là tài nguyên của máy ảo dành cho long-running tasks.
-\[
+\begin{equation}
 	vm_{i}.longUsage = \sum_{j = 1}^{k}task_{ij}.c \times (1 - task_{ij}.type)
-\]
+\end{equation}
 $vm_{i}.usage$ là tài nguyên được sử dụng tại thời điểm kết thúc lập lịch, 
-\[
+\begin{equation}
 	vm_{i}.Eusage = vm_{i}.EshortUsage + vm_{i}.longUsage
-\]
+\end{equation}
 \newpage
 Ta tính được 2 tập hợp biểu diễn khối lượng công việc giữa các máy tính ảo: 
 \begin{itemize}
@@ -914,7 +916,7 @@ Kết quả thu được trên bộ dữ liệu chọn ngẫu nhiên gồm 266 t
 \noindent
 Ta thấy rằng kịch bản thứ nhất (no-delay) có trung bình thời gian thực thi nhỏ hơn so với kịch bản thứ 2 (delay), ứng với số liệu là 4.78 và 5.72. Với giá trị $pvalue = 0.013$ và mức ý nghĩa $\alpha = 0.05$, ta có thể kết luận rằng việc lập lịch với các thông tin bị trễ khiến cho thời gian thực thi của tasks tăng lên. 
 
-\subsection{Hiểu quả của việc ước lượng tài nguyên}
+\subsection{Hiệu quả của việc ước lượng tài nguyên}
 Ta sẽ so sánh sự khác biệt giữa việc sử dụng mạng Bayesian để ước lượng tài nguyên khả dụng với việc dùng thông tin tại thời điểm bắt đầu lập lịch. Xét tại thời điểm lập lịch $t_{1}$, với máy tính ảo vm, ta thu được tập các tasks đang chạy là $r = \{task_{1}, ..., task_{k}\}$. Tại thời điểm lập lịch hoàn thành và các tasks mới đến được đưa đến vm, $t_{2}$, các tasks trong tập $r$ có thể đã hoàn thành và tài nguyên được giải phóng. Gọi $q = \{s_{1}, ..., s_{k}\}$ là trạng thái của các tasks trong $r$ tại thời điểm $t_{2}$, 
 \[
 s_{i} = 
@@ -924,31 +926,32 @@ s_{i} =
 	\end{cases}
 \]
 Với các thuật toán thông thường, khi ta lấy thông tin tại $t_{1}$ để lập lịch, tài nguyên khả dụng của máy ảo được tính: 
-\[
+\begin{equation}
 	hard\_est\_resources = vm.v - \sum_{i = 1}^{k}task_{i}.c
-\]
-Như tại thời điểm $t_{2}$, lượng tài nguyên thực tế khả dụng là: 
-\[
+\end{equation}
+Nhưng tại thời điểm $t_{2}$, lượng tài nguyên thực tế khả dụng là: 
+\begin{equation}
 	real\_resources = vm.v - \sum_{i = 1}^{k}task_{i}.c \times s_{i}
-\]
+\end{equation}
 Do 
-\[
+\begin{equation*}
 	\sum_{i = 1}^{k}task_{i}.c \times s_{i} \leq \sum_{i = 1}^{k}task_{i}.c
-\]
+\end{equation*}
 nên 
-\[
+\begin{equation} \label{equ:1}
 	real\_resources \geq hard\_est\_resources
-\]
+\end{equation}
 Khi sử dụng mạng Bayesian để tính $p_{i}$ là xác suất $task_{i}$ còn chạy tại $t_{2}$, tài nguyên ước lượng là: 
-\[
+\begin{equation}
 	est\_resources = vm.v - \sum_{i = 1}^{k}task_{i}.c \times p_{i}
-\]
+\end{equation}
 Tương tự, ta có:
-\[
+\begin{equation} \label{equ:2}
 	est\_resources \geq hard\_est\_resources
-\]
-Để thấy được rõ ràng sự chênh lệch giữa các phương pháp, ta ghi lại các kết quả ước lượng được với thông tin thực tế thu được xuyên suốt quá trình mô phỏng.
-Trong hình~\ref{fig:usage_est_a}, đường màu tím biểu diễn cho $hard\_est\_resources$, là thông tin không được ước lượng. Do thời gian trung bình chạy của các tasks chỉ khoảng 5 giây (bảng~\ref{table:finished_tasks}), nên sự thay đổi trạng thái liên túc của các tasks khiến cho việc ước lượng với thực tế bị chênh lệch rất nhiều. Kết quả ước lượng bằng mạng Bayesian được thể hiện bằng đường màu đỏ, dao động xung quanh đường giá trị thực và có sai số nhỏ hơn so với việc dùng thông tin bị trễ. 
+\end{equation}
+Để thấy được rõ ràng sự chênh lệch giữa các thông số tại các thời điểm như trong phương trình \ref{equ:1}, \ref{equ:2}, ta ghi lại các kết quả ước lượng được với thông tin thực tế thu được xuyên suốt quá trình mô phỏng.
+Trong hình~\ref{fig:usage_est_a}, đường màu tím biểu diễn cho $hard\_est\_resources$, là thông tin không được ước lượng,
+đường màu đỏ là thông tin được ước lượng bằng mạng Bayesian, còn đường màu xanh dương là thông tin tài nguyên thực tế tại thời điểm thực thi. Do thời gian trung bình chạy của các tasks chỉ khoảng 5 giây (bảng~\ref{table:finished_tasks}), nên sự thay đổi trạng thái liên tục của các tasks khiến cho việc ước lượng với thực tế bị chênh lệch rất nhiều. Kết quả ước lượng bằng mạng Bayesian dao động xung quanh đường giá trị thực và có sai số nhỏ hơn so với việc dùng thông tin bị trễ. 
 
 \begin{figure}[t]
 \centering
@@ -969,7 +972,7 @@ Trong hình~\ref{fig:usage_est_a}, đường màu tím biểu diễn cho $hard\_
 \end{figure}
 
 \noindent
-Mức độ sai lệch của cả hai phương pháp đều phụ thuộc vào số lượng tasks đang chạy trong máy ảo. Hình~\ref{fig:usage_est_b} cho thấy khi số lượng tasks càng tăng (đường màu xanh lá cây), sai số do độ chễ của hệ thống cùng với sai số của mạng Bayesian đều tăng lên. Dù vậy, về tổng quan, việc ước lượng cũng có sai số nhỏ hơn với việc dùng thông tin bị trễ, và hiệu quả của nó giúp cải thiện sự mất cân bằng của hệ thống do sự thay đổi trạng thái của các tasks trong hệ thống. 
+Mức độ sai lệch của cả hai phương pháp đều phụ thuộc vào số lượng tasks đang chạy trong máy ảo. Hình~\ref{fig:usage_est_b} cho thấy khi số lượng tasks càng tăng (đường màu xanh lá cây), sai số do độ trễ của hệ thống cùng với sai số của mạng Bayesian đều tăng lên. Dù vậy, về tổng quan, việc ước lượng cũng có sai số nhưng nhỏ hơn so với trường hợp dùng thông tin bị trễ, và hiệu quả của nó giúp cải thiện sự mất cân bằng của hệ thống do sự thay đổi trạng thái của các tasks trong hệ thống. 
 
 \subsection{Sự mất cân bằng khối lượng công việc giữa các máy trong quá trình hoạt động}
 \begin{figure}[h!]
@@ -980,7 +983,7 @@ Mức độ sai lệch của cả hai phương pháp đều phụ thuộc vào s
 \end{figure}
 
 \noindent
-Như đã được đề cập ở~\ref{unload_balancing}, trạng thái các tasks thay đổi trong quá trình chạy là nguyên nhân dẫn đến sự mất cân bằng tài nguyên sử dụng giữa các máy.\\
+Như đã được đề cập ở mục~\ref{unload_balancing}, trạng thái các tasks thay đổi trong quá trình chạy là nguyên nhân dẫn đến sự mất cân bằng tài nguyên sử dụng giữa các máy.\\
 Hình~\ref{fig:realtime_weights} thể hiện sự thay đổi trọng số mất cân bằng hệ thống (được tính toán trong thuật toán~\ref{alg:2} với tài nguyên CPU) theo thời gian của hai thuật toán Resources Balancing và Worstfit. Thuật toán Resources Balancing có sử dụng mạng Bayesian để ước lượng sự thay đổi của tài nguyên trong quá trình chạy để đưa ra quyết định lập lịch có thể thích ứng được với các sự thay đổi đó. Các tasks đến hệ thống và được đưa vào hàng đợi, cách 20 giây lập lịch một lần tại các thời điểm 500, 520, ... Tại các thời điểm lập lịch, ta thấy rằng chỉ số mất cân bằng của thuật toán Worstfit đôi khi tốt hơn so với thuật toán Resources Balancing, nhưng về tổng quan thì Resources Balancing tốt hơn. Bên cạnh đó, độ biến động của đường biểu thị cho Worstfit cũng cao hơn so với Resources Balancing. Điều này đúng với tính chất của thuật toán, do Worstfit chỉ tập trung tối ưu tại thời điểm lập lịch nên chỉ số tại thời điểm đó sẽ tốt hơn, nhưng trong quá trình chạy các tasks thay đổi trạng thái khiến cho sự cân bằng bị phá vỡ. Điều tương tự cũng xảy ra với Resources Balancing, nhưng hiệu quả của việc ước lượng tài nguyên với cân bằng giữa long-running tasks và batch-job tasks đã làm giảm độ biến động của chỉ số mất cân bằng, nên trong quá trình chạy trọng số của thuật toán này nhỏ hơn Worstfit. 
 
 \newpage 

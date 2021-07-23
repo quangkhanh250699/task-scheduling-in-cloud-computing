@@ -33,7 +33,7 @@ For more information about algorithms, please see my thesis in *reports* folder.
 
 ### General Metrics
 I use the execution time average and the number of finished tasks in 1000s simulation to assess the performence of a algorithm.  
-*** Number of tasks finished ***
+***Number of tasks finished***
 
 | Statistics | Number of tasks finished |
 | ----------- | ----------- |
@@ -43,7 +43,7 @@ I use the execution time average and the number of finished tasks in 1000s simul
 
 We can see that my solution finished more tasks in 1000s than the two others.
 
-*** Execution time average *** 
+***Execution time average*** 
 
 | Statistics | Execution Time Average |
 | ----------- | ----------- |

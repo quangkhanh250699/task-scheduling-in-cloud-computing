@@ -23,7 +23,7 @@ public abstract class AbstractSchedulingAlgorithm implements SchedulingAlgorithm
         this.processing();
         long endTime = System.nanoTime();
         this.runningTime = (double) (endTime - startTime) / 1000000000;
-        this.runningTime += 0;
+        this.runningTime += 2;
         this.isRunning = false;
     }
 
